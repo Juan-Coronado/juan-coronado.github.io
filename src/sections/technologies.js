@@ -24,14 +24,20 @@ export class TechnologyExplorer {
       const list = node('ul', 'technology-entries');
       list.append(...category.items.map(technology => {
         const item = node('li', 'technology-entry');
-        item.append(node('h4', 'technology-name', technology.name), node('p', 'technology-description', technology.description));
+        const icon = node('img', `technology-icon${technology.lightIcon ? ' technology-icon--light' : ''}`, '', {
+          src: new URL(`../../assets/technology-icons/${technology.icon}.svg`, import.meta.url).href,
+          alt: '', width: 36, height: 36, loading: 'lazy', decoding: 'async',
+        });
         const references = (technology.projectIds ?? []).map(id => projects.find(project => project.id === id)).filter(Boolean);
+        const practiceType = technology.practice ?? (references.length ? 'used' : 'explored');
+        item.append(icon, node('h4', 'technology-name', technology.name), node('span', 'technology-status', data.practiceLabels[practiceType]));
+        if (technology.note) item.append(node('p', 'technology-note', technology.note));
         const practice = node('div', 'technology-practice');
         if (references.length) {
           practice.append(node('span', 'sr-only', `${data.projectLabel}: `));
           for (const project of references) practice.append(node('a', 'technology-project', project.title, { href: project.caseStudy }));
-        } else practice.append(node('span', 'technology-explored', data.exploredLabel));
-        item.append(practice);
+          item.append(practice);
+        }
         return item;
       }));
       panel.append(heading, list);
