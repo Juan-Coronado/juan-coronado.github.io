@@ -1,13 +1,13 @@
-import { content } from './content.js?revision=technology-icons-1';
+import { content } from './content.js?revision=github-projects-1';
 import { motion } from './config/motion.js?revision=grimoire-polish';
 import { IntroSequence } from './animation/intro.js?revision=grimoire-polish';
 import { ParticlePortrait } from './animation/portrait.js?revision=grimoire-polish';
 import { SectionNavigation } from './ui/navigation.js?revision=grimoire-polish';
 import { SectionProgress } from './ui/section-progress.js';
 import { SectionScroll } from './ui/section-scroll.js';
-import { ProjectDialog } from './sections/project-dialog.js?revision=grimoire-polish';
-import { ProjectShowcase } from './sections/project-showcase.js?revision=grimoire-polish';
-import { ProjectCatalog } from './sections/project-catalog.js?revision=grimoire-polish';
+import { ProjectDialog } from './sections/project-dialog.js?revision=github-projects-1';
+import { ProjectShowcase } from './sections/project-showcase.js?revision=github-projects-1';
+import { ProjectCatalog } from './sections/project-catalog.js?revision=github-projects-1';
 import { createCloverSeal } from './ui/emblems.js?revision=grimoire-polish';
 import { TechnologyExplorer } from './sections/technologies.js?revision=technology-icons-1';
 import { renderCopy, renderContact } from './sections/render.js?revision=grimoire-polish';

@@ -50,6 +50,7 @@ Cada gesto de rueda avanza o retrocede una pantalla y se detiene; la inercia no 
 
 ```sh
 npm test
+npm run test:downloads
 ```
 
 Las pruebas comprueban la máscara, el presupuesto de partículas y los destinos de desplazamiento, incluidos contenido alto, límites y cambios de viewport. La interacción y la composición también requieren comprobación en el navegador.
@@ -82,6 +83,8 @@ La URL pública se configura en `content.site.url`; `PORTFOLIO_SITE_URL` permite
 Cada detalle incluye periodo original, alcance, aprendizaje, correcciones y verificación. «Ver proyecto» abre una ficha con evidencia del programa real. El sitio es estático y compatible con GitHub Pages; no incluye compilador, lanzador de programas ni adaptaciones simuladas. JImport conserva su ficha documentada.
 
 «Ver detalles» muestra la captura real, un extracto de consola real o el estado documental, según el material de cada proyecto. «Abrir ficha completa» lleva a la página independiente y «Descargar código» entrega fuentes y pruebas. Las aplicaciones reales de EuroSky y Metropolitano tienen un enlace en el detalle visible únicamente en localhost, cuando sus servidores locales están disponibles. GitHub Pages muestra las fichas y descargas sin intentar abrir los servicios privados del propietario. Los ZIP no contienen guías, ejecutables, App_Data ni claves. Cada programa y sus instrucciones están en `../proyectos/`.
+
+Los diez proyectos tienen un repositorio propio en GitHub, configurado mediante `repository` en el catálogo. El detalle y la ficha completa enlazan a las fuentes; JImport utiliza «Ver documentación en GitHub». El carrusel mantiene sus dos acciones principales. Las descargas SQL incluyen esquema, vistas, operaciones y pruebas de integración; `test:downloads` comprueba esos archivos y excluye Git, datos privados, guías y binarios.
 
 ## Pulido de presentación del 20 de octubre de 2026
 

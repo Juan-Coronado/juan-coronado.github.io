@@ -6,7 +6,7 @@ export function technologyTags(technologies) {
   return list;
 }
 
-export function projectLinks(project, labels, { includeCaseStudy = true, includeLocalDemo = true } = {}) {
+export function projectLinks(project, labels, { includeCaseStudy = true, includeLocalDemo = true, includeSource = true } = {}) {
   const links = node('div', 'project-links');
   if (includeCaseStudy && project.caseStudy) links.append(externalLink(labels.viewCaseStudy, project.caseStudy, 'grimoire-button grimoire-button--secondary quiet-link'));
   if (project.demo) links.append(externalLink(labels.viewDemo, project.demo, 'grimoire-button grimoire-button--secondary quiet-link'));
@@ -15,7 +15,7 @@ export function projectLinks(project, labels, { includeCaseStudy = true, include
     const download = node('a', 'grimoire-button grimoire-button--secondary quiet-link', project.downloadLabel || labels.downloadCode, { href: project.download, download: '' });
     links.append(download);
   }
-  if (project.source) links.append(externalLink(labels.sourceCode, project.source, 'grimoire-button grimoire-button--secondary quiet-link'));
+  if (includeSource && project.source) links.append(externalLink(project.sourceLabel || labels.sourceCode, project.source, 'grimoire-button grimoire-button--secondary quiet-link'));
   else if (!project.download) links.append(node('span', 'pending-note', labels.sourcePending));
   return links;
 }

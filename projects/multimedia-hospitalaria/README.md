@@ -1,21 +1,59 @@
-# Sistema multimedia hospitalario
+# Multimedia hospitalaria
 
-Proyecto grupal de junio de 2026. Prototipo educativo C++17 para pacientes y multimedia, corregido y comprobado en octubre de 2026. Usar exclusivamente datos ficticios; no es un sistema clinico listo para produccion.
+Prototipo de organización y búsqueda de archivos multimedia mediante estructuras de datos propias.
 
-## Arquitectura
+[Ficha y evidencia en el portafolio](https://juan-coronado.github.io/projects/multimedia-hospitalaria/)
 
-Se conservan las capas de presentacion, negocio, sistema de archivos y las estructuras propias: vector dinamico, arbol rojo-negro, hash por ID/nombre y trie. Se elimino la reserva inicial de millones de nodos vacios y se liberan nodos y tablas al cerrar. La eliminacion actualiza todos los indices. Se validan los campos y extensiones de archivos.
+| Periodo original | Dificultad académica | Estado de esta versión |
+| --- | --- | --- |
+| Junio de 2026 | Avanzada | Prototipo comprobado |
 
-La persistencia se carga en un estado temporal y rechaza archivos corruptos; el guardado reemplaza de forma atomica. La interfaz no borra carpetas recursivamente ni inicia con un archivo invalido para luego sobrescribirlo. Los archivos multimedia se copian a un almacen local. El XOR hexadecimal del formato original es ofuscacion educativa, no cifrado seguro; los archivos binarios no se cifran. No hay autenticacion ni controles aptos para historias clinicas reales.
+## Funcionalidades
 
-## Ejecutar
+- Registro y consulta de pacientes ficticios.
+- Índices hash, trie y árbol rojo-negro.
+- Copia de multimedia y persistencia del estado.
 
-En Developer PowerShell para Visual Studio: `cl /nologo /std:c++17 /EHsc /utf-8 /D_HAS_STD_BYTE=0 programa/SistemaHospitalarioMultimedia/src/*.cpp shell32.lib /Fe:hospital.exe`. Tambien se conserva CMakeLists.txt del original. Ejecutar en una carpeta de datos propia. Enter continua; 0 guarda y sale. Las vistas previas se dejan en sala_reconstruccion_temporal, sin eliminar archivos de otras carpetas.
+## Ejecución
 
-## Pruebas
+Windows con las herramientas C++ de Visual Studio. Abrir Developer PowerShell en la raíz del repositorio. Usar exclusivamente datos y archivos ficticios.
 
-Compilar tests/estructuras.cpp con BusinessLogic.cpp, FileSystem.cpp y MotorAlgoritmico.cpp, mismo estandar y definicion. Ejecutar en una carpeta de prueba pasando la ruta de un PNG. Comprobado: 300 pacientes ficticios, invariantes rojo-negro, duplicados, copia PNG, consultas hash/trie, eliminacion, recarga del archivo guardado y rechazo de un archivo corrupto sin perder el estado previo. Lotes sinteticos limitados a 10000 registros por operacion; sus archivos son marcadores de prueba, no estudios medicos reales. No se hizo una prueba de millones de elementos.
+```powershell
+cl /nologo /std:c++17 /EHsc /utf-8 /D_HAS_STD_BYTE=0 programa/SistemaHospitalarioMultimedia/src/*.cpp shell32.lib /Fe:hospital.exe
+.\hospital.exe
+```
+
+## Comprobación disponible
+
+Compilado con MSVC C++17. Pruebas con 300 pacientes ficticios, invariantes del árbol, PNG real, hash, trie y persistencia.
+
+Ejecutar desde la raíz del repositorio. Ejecutar en una copia de pruebas, porque se guardan archivos locales.
+
+```powershell
+cl /nologo /std:c++17 /EHsc /utf-8 /D_HAS_STD_BYTE=0 tests/estructuras.cpp programa/SistemaHospitalarioMultimedia/src/BusinessLogic.cpp programa/SistemaHospitalarioMultimedia/src/FileSystem.cpp programa/SistemaHospitalarioMultimedia/src/MotorAlgoritmico.cpp shell32.lib /Fe:pruebas.exe
+.\pruebas.exe "RUTA_A_UN_PNG_DE_PRUEBA"
+```
+
+[Registro de ejecución](evidencia/ejecucion.txt)
+
+[Registro de pruebas](evidencia/pruebas.txt)
+
+Las comprobaciones anteriores corresponden a la recuperación de octubre de 2026; esta publicación conserva sus registros.
 
 ## Aprendizaje
 
-Estructuras de datos, relaciones e indices, gestion de memoria y persistencia. Dificultad avanzada academica.
+- Combinar estructuras de datos e índices relacionados.
+- Gestionar memoria y conservar la integridad al guardar o eliminar registros.
+
+## Revisión para el portafolio
+
+- Eliminada la reserva inicial excesiva de memoria.
+- Corregidos índices al eliminar, lectura de archivos corruptos y guardado atómico.
+
+## Alcance
+
+Prototipo educativo: usar solo datos ficticios. La ofuscación original no es cifrado seguro y los binarios no se cifran. No se hicieron pruebas con millones de registros ni una validación para uso clínico.
+
+## Contexto académico y procedencia
+
+Este repositorio conserva el alcance académico y los créditos disponibles en el material original. La recuperación, las correcciones y las reconstrucciones de octubre de 2026 se realizaron con asistencia de Codex/IA y se distinguen del trabajo original. La contribución individual de cada integrante no está desglosada aquí.

@@ -1,4 +1,4 @@
-import { projectItems } from './projects.js?revision=grimoire-polish';
+import { projectItems } from './projects.js?revision=github-projects-1';
 /** Identity and copy live here, independently of the animation. */
 export const content = Object.freeze({
   identity: {

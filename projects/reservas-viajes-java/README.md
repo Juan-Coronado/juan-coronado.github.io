@@ -1,19 +1,60 @@
-# Reservas turisticas Java Swing
+# Reservas turísticas
 
-Proyecto de noviembre de 2023, corregido en octubre de 2026. Se conserva el formulario NetBeans y la separacion entre datos e interfaz. Compatible con Java 11.
+Una interfaz de escritorio para registrar viajeros y organizar sus reservas turísticas.
 
-## Correcciones
+[Ficha y evidencia en el portafolio](https://juan-coronado.github.io/projects/reservas-viajes-java/)
 
-Origen y hotel ya no se intercambian. Cada reserva ocupa su propia fila. Se validan campos, DNI, cantidades y dias. El archivo se guarda mediante reemplazo atomico y se muestran errores. La etiqueta Precio Final no tenia tarifa ni calculo en el original: se sustituye por el contador de reservas, sin inventar un precio.
+| Periodo original | Dificultad académica | Estado de esta versión |
+| --- | --- | --- |
+| Noviembre de 2023 | Inicial | Comprobado localmente |
 
-## Ejecutar
+## Funcionalidades
 
-Desde programa/programaPaquete: `javac -encoding UTF-8 -d build src/main/java/com/mycompany/programapaquete/*.java` y `java -cp build com.mycompany.programapaquete.AplicacionPractica`. Reservar exporta todas las reservas de la sesion a reporte.txt. No es una reserva comercial ni cobra pagos.
+- Datos del viajero, destino, origen, hotel, personas y días.
+- Una fila por reserva y exportación del reporte.
+- Validación de campos y guardado con reemplazo atómico.
 
-## Verificacion
+## Ejecución
 
-La prueba tests/ReservasTest.java se compila con las fuentes y se ejecuta con `java -ea -cp build com.mycompany.programapaquete.ReservasTest evidencia/aplicacion.png`. Valida modelo, archivo y dos filas distintas; renderiza la interfaz real Swing con datos de prueba.
+JDK 11 o superior, con entorno gráfico para Swing. Ejecutar desde la raíz del repositorio.
+
+```powershell
+javac -encoding UTF-8 -d build programa/programaPaquete/src/main/java/com/mycompany/programapaquete/*.java tests/ReservasTest.java
+java -cp build com.mycompany.programapaquete.AplicacionPractica
+```
+
+La acción Reservar exporta las reservas de la sesión a reporte.txt. El formulario NetBeans y el archivo Maven se conservan dentro de programa/.
+
+## Comprobación disponible
+
+Compilado con Java 11. Probados modelo, validación, guardado y dos reservas distintas en la interfaz Swing real.
+
+Ejecutar desde la raíz del repositorio.
+
+```powershell
+java -ea -cp build com.mycompany.programapaquete.ReservasTest evidencia/aplicacion.png
+```
+
+[Registro de pruebas](evidencia/pruebas.txt)
+
+![Render de la interfaz Swing ejecutada con dos reservas de prueba.](evidencia/aplicacion.png)
+
+Las comprobaciones anteriores corresponden a la recuperación de octubre de 2026; esta publicación conserva sus registros.
 
 ## Aprendizaje
 
-POO, eventos Swing, validacion y persistencia de archivos. Dificultad inicial.
+- Modelar información con clases y trabajar con eventos Swing.
+- Presentar colecciones y conservar datos en archivos.
+
+## Revisión para el portafolio
+
+- Corregido el intercambio de origen y hotel y la repetición de filas.
+- Compatibilidad con Java 11 y errores visibles al guardar.
+
+## Alcance
+
+Se conserva el formulario original de 2023. El contador sustituye un precio que no tenía tarifa definida; no se inventaron importes.
+
+## Contexto académico y procedencia
+
+Este repositorio conserva el alcance académico y los créditos disponibles en el material original. La recuperación, las correcciones y las reconstrucciones de octubre de 2026 se realizaron con asistencia de Codex/IA y se distinguen del trabajo original. La contribución individual de cada integrante no está desglosada aquí.

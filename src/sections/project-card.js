@@ -1,6 +1,6 @@
 import { node } from '../ui/dom.js';
 import { createCloverSeal } from '../ui/emblems.js?revision=grimoire-polish';
-import { technologyTags, projectLinks } from './project-elements.js?revision=grimoire-polish';
+import { technologyTags, projectLinks } from './project-elements.js?revision=github-projects-1';
 import { projectDifficulty } from './project-order.js';
 
 export function createProjectCard(project, data, labels, { onOpen, prefix, signal }) {
@@ -23,7 +23,7 @@ export function createProjectCard(project, data, labels, { onOpen, prefix, signa
   action.append(createCloverSeal());
   action.addEventListener('click', () => onOpen(project, action), { signal });
   const actions = node('div', 'project-card__actions');
-  actions.append(action, projectLinks(project, labels, { includeCaseStudy: false, includeLocalDemo: false }));
+  actions.append(action, projectLinks(project, labels, { includeCaseStudy: false, includeLocalDemo: false, includeSource: false }));
   body.append(metadata, title, difficulty, description, technologyTags(project.technologies), actions);
   card.append(imageButton, body);
   return card;

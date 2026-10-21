@@ -1,21 +1,57 @@
-# Agencia de viajes en C++
+# Agencia de viajes
 
-Ejercicio original de noviembre de 2022, recuperado y corregido en octubre de 2026. Trabajo académico grupal; estas correcciones se realizaron para el portafolio de Juan Antonio Coronado Palacios.
+Mis primeros pasos con menús, decisiones y cotizaciones de servicios turísticos.
 
-## Arquitectura y alcance
+[Ficha y evidencia en el portafolio](https://juan-coronado.github.io/projects/agencia-viajes-cpp/)
 
-programa/main.cpp contiene la interacción; catalogo.hpp centraliza el catálogo y el cálculo. Permite cotizar destinos, hoteles, restaurantes y coches. Tarifas académicas del original, sin conexión a proveedores ni reservas reales.
+| Periodo original | Dificultad académica | Estado de esta versión |
+| --- | --- | --- |
+| Noviembre de 2022 | Inicial | Comprobado localmente |
 
-Se corrigieron lecturas de nombres, rangos, cantidades negativas, salida al cerrar la entrada y repetición de menús. No se conservan datos personales.
+## Funcionalidades
 
-## Ejecutar
+- Destinos, hoteles, restaurantes y coches del catálogo original.
+- Nombres completos, rangos válidos y cálculo por días.
+- Tarifas académicas originales; sin reservas ni cobros reales.
 
-En Developer PowerShell para Visual Studio: `cl /nologo /std:c++17 /EHsc /utf-8 programa/main.cpp /Fe:agencia.exe` y `./agencia.exe`.
+## Ejecución
 
-## Verificación
+Windows con las herramientas C++ de Visual Studio. Abrir Developer PowerShell en la raíz del repositorio.
 
-`cl /nologo /std:c++17 /EHsc /utf-8 tests/cotizacion.cpp /Fe:tests.exe` y `./tests.exe`. Comprobación ejecutada adicionalmente: hotel Met Hotel × 3 días = S/966; entradas inválidas y fin de entrada. Registro real en evidencia/ejecucion.txt.
+```powershell
+cl /nologo /std:c++17 /EHsc /utf-8 programa/main.cpp /Fe:agencia.exe
+.\agencia.exe
+```
+
+## Comprobación disponible
+
+Compilado con MSVC C++17. Probados cálculo, límites, entradas inválidas y fin de entrada.
+
+Ejecutar desde la raíz del repositorio.
+
+```powershell
+cl /nologo /std:c++17 /EHsc /utf-8 tests/cotizacion.cpp /Fe:pruebas.exe
+.\pruebas.exe
+```
+
+[Registro de ejecución](evidencia/ejecucion.txt)
+
+Las comprobaciones anteriores corresponden a la recuperación de octubre de 2026; esta publicación conserva sus registros.
 
 ## Aprendizaje
 
-Condicionales, recorridos, funciones, validación de entradas y separación entre datos e interfaz. Dificultad inicial.
+- Organizar decisiones en funciones y recorridos.
+- Separar el catálogo de la interacción y validar antes de calcular.
+
+## Revisión para el portafolio
+
+- Corregidas las lecturas de nombres y las entradas fuera de rango.
+- Añadidas pruebas de cotización y salida al cerrar la entrada.
+
+## Alcance
+
+Programa académico de 2022, corregido en octubre de 2026. Trabajo grupal; las tarifas no son precios comerciales actuales.
+
+## Contexto académico y procedencia
+
+Este repositorio conserva el alcance académico y los créditos disponibles en el material original. La recuperación, las correcciones y las reconstrucciones de octubre de 2026 se realizaron con asistencia de Codex/IA y se distinguen del trabajo original. La contribución individual de cada integrante no está desglosada aquí.

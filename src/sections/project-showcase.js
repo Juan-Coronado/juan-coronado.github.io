@@ -1,5 +1,5 @@
 import { node } from '../ui/dom.js';
-import { createProjectCard } from './project-card.js?revision=grimoire-polish';
+import { createProjectCard } from './project-card.js?revision=github-projects-1';
 
 /** Manual horizontal carousel. Native scrolling also supports trackpads and touch. */
 export class ProjectShowcase {

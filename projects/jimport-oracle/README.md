@@ -1,16 +1,47 @@
-# JImport migracion SQL Server a Oracle
+# JImport: migración de datos
 
-Caso documentado del ciclo 2024-II. El material recibido contiene el problema, la migracion propuesta y objetivos; no contiene un backup de Sales, scripts de origen, exportacion Oracle ni pruebas de una migracion realizada.
+Estudio de una migración del esquema Sales, desde la planificación hasta la validación de integridad.
 
-## Lo documentado
+[Ficha y evidencia en el portafolio](https://juan-coronado.github.io/projects/jimport-oracle/)
 
-La propuesta plantea migrar el esquema Sales desde SQL Server 2017 a Oracle 19c en dos maquinas virtuales, manteniendo conectividad remota con los firewalls activos. Describe planificacion, transferencia, integridad y validacion.
+| Periodo original | Dificultad académica | Estado de esta versión |
+| --- | --- | --- |
+| 2024-II | Avanzada | Documentado · sin ejecutar |
 
-## Entregable local
+## Funcionalidades
 
-Se preparo una ficha de estudio para el portafolio y un plan de ejecucion verificable. No se afirma que la migracion este terminada. La instancia SQL Server disponible no sustituye el origen real; no hay instalacion Oracle ni exportacion del caso entre los materiales recibidos.
+- Caso de migración de SQL Server 2017 a Oracle 19c.
+- Plan de inventario, respaldo, conversión y comparación.
+- Alcance y evidencia disponible diferenciados de una ejecución real.
 
-## Secuencia para ejecutar el caso real
+## Ejecución
+
+Caso de estudio documental. No contiene un programa ejecutable ni afirma una migración completada.
+
+## Comprobación disponible
+
+Revisión del documento y del material recibido. No se ejecutó una migración: no se proporcionó el origen Sales y no hay entorno Oracle disponible.
+
+Las comprobaciones anteriores corresponden a la recuperación de octubre de 2026; esta publicación conserva sus registros.
+
+## Aprendizaje
+
+- Analizar compatibilidad de motores y dependencias del esquema.
+- Definir cómo verificar integridad y preparar una recuperación.
+
+## Revisión para el portafolio
+
+- Preparada la ficha técnica y la secuencia de validación a partir del documento recibido.
+
+## Alcance
+
+Se presenta como caso documentado, no como una migración terminada. La dificultad corresponde al caso propuesto; no equivale a una ejecución comprobada.
+
+## Contexto académico y procedencia
+
+Este repositorio conserva el alcance académico y los créditos disponibles en el material original. La recuperación, las correcciones y las reconstrucciones de octubre de 2026 se realizaron con asistencia de Codex/IA y se distinguen del trabajo original. La contribución individual de cada integrante no está desglosada aquí.
+
+## Plan documentado
 
 1. Inventariar tablas, claves, tipos, vistas, procedimientos y volumen del esquema Sales original.
 2. Obtener y verificar un respaldo de origen y trabajar sobre una copia. Registrar conteos y huellas de los datos antes de transformar.
@@ -18,7 +49,3 @@ Se preparo una ficha de estudio para el portafolio y un plan de ejecucion verifi
 4. Revisar las diferencias de tipos, identidad/secuencias, fechas, Unicode y T-SQL frente a PL/SQL. Crear el esquema destino conforme al inventario real.
 5. Migrar estructura y datos respetando dependencias. Comparar por tabla conteos, claves, nulos, sumas de importes y muestras deterministas.
 6. Ejecutar consultas del negocio en ambos motores, documentar diferencias y ensayar restauracion antes de cambiar aplicaciones.
-
-## Aprendizaje documentado
-
-Planificacion de migraciones, compatibilidad de motores y validacion de integridad. Dificultad avanzada del caso propuesto. No hay capturas de una ejecucion Oracle comprobada y no se fabrican.

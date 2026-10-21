@@ -1,5 +1,5 @@
 import { node } from '../ui/dom.js';
-import { technologyTags, projectLinks } from './project-elements.js?revision=grimoire-polish';
+import { technologyTags, projectLinks } from './project-elements.js?revision=github-projects-1';
 import { syncDialogState, closeDialogsForNavigation } from '../ui/dialog-state.js';
 
 export class ProjectDialog {

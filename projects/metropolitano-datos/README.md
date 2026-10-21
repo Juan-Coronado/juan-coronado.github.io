@@ -1,19 +1,57 @@
-# Metropolitano base de datos SQL Server
+# Metropolitano: datos
 
-Caso academico 2024-I. SQL recuperado y corregido desde el DOCX, ejecutado en SQL Server LocalDB 2019 durante octubre de 2026.
+El modelo relacional detrás de usuarios, tarjetas, recargas y pagos del Metropolitano.
 
-## Arquitectura
+[Ficha y evidencia en el portafolio](https://juan-coronado.github.io/projects/metropolitano-datos/)
 
-01_esquema.sql crea las 16 tablas del modelo y una tabla de eventos. 02_vistas.sql contiene las 5 vistas del informe. 03_operaciones.sql contiene 10 procedimientos, una funcion de saldo y 4 triggers. Se corrigieron claves identity ausentes, nombres de campos, joins, comas y descuentos/recargas aplicados dos veces. Los triggers agrupan multiples filas y rechazan tarjetas bloqueadas o vencidas y saldo insuficiente.
+| Periodo original | Dificultad académica | Estado de esta versión |
+| --- | --- | --- |
+| 2024-I | Intermedia | Comprobado en SQL Server |
 
-## Ejecutar
+## Funcionalidades
 
-Crear una base nueva y vacia en SQL Server 2019 o superior; ejecutar los tres archivos por orden. No incluyen DROP DATABASE ni borran bases existentes. Para esta comprobacion se creo la instancia aislada PortfolioJuan y la base PortfolioMetropolitano; no se uso SQLEXPRESS ni la instancia predeterminada. `sqlcmd -S "(localdb)\PortfolioJuan" -E -d PortfolioMetropolitano -i programa/01_esquema.sql -b -f 65001` (repetir con 02 y 03).
+- 16 tablas del modelo, cinco vistas y diez procedimientos.
+- Función de saldo y cuatro triggers.
+- Recargas, pagos y bloqueo con integridad de saldo.
 
-## Pruebas
+## Ejecución
 
-En una base recien creada: ejecutar tests/integracion.sql. Datos ficticios. Saldo inicial 10 + recarga 20 + recargas multiples 12 - pasaje 2.50 = 39.50. Se rechazan sobreconsumo y recarga de tarjeta robada. Evidencia real en evidencia/ejecucion.txt. Las pruebas insertan datos de demostracion, no se deben ejecutar sobre una base de produccion.
+SQL Server 2019 o superior y sqlcmd. Usar una base de pruebas nueva y vacía; sustituir SERVIDOR y BASE_DE_PRUEBAS por los valores del entorno. Ejecutar los tres scripts en orden.
+
+```powershell
+sqlcmd -S "SERVIDOR" -E -d "BASE_DE_PRUEBAS" -i programa/01_esquema.sql -b -f 65001
+sqlcmd -S "SERVIDOR" -E -d "BASE_DE_PRUEBAS" -i programa/02_vistas.sql -b -f 65001
+sqlcmd -S "SERVIDOR" -E -d "BASE_DE_PRUEBAS" -i programa/03_operaciones.sql -b -f 65001
+```
+
+## Comprobación disponible
+
+Ejecutado en SQL Server LocalDB 2019 aislado. Saldo comprobado: 10 + 20 + 12 − 2,50 = 39,50; rechazo de sobreconsumo y tarjeta robada.
+
+Ejecutar desde la raíz del repositorio. La prueba inserta datos ficticios y requiere una base de pruebas recién preparada; no usar una base de producción.
+
+```powershell
+sqlcmd -S "SERVIDOR" -E -d "BASE_DE_PRUEBAS" -i tests/integracion.sql -b -f 65001
+```
+
+[Registro de ejecución](evidencia/ejecucion.txt)
+
+Las comprobaciones anteriores corresponden a la recuperación de octubre de 2026; esta publicación conserva sus registros.
 
 ## Aprendizaje
 
-Modelado relacional, SQL, claves, vistas, procedimientos y operaciones atomicas. Dificultad intermedia. Concurrencia de sesiones multiples no sometida a pruebas de carga.
+- Convertir un caso de negocio en entidades y relaciones.
+- Utilizar SQL, restricciones y operaciones atómicas.
+
+## Revisión para el portafolio
+
+- Recuperado el SQL del informe y corregidos campos, claves y joins.
+- Eliminada la doble aplicación de recargas y pagos; triggers para múltiples filas.
+
+## Alcance
+
+Datos de prueba. Se conservaron el modelo conceptual y el alcance del trabajo de 2024-I. No se hizo una prueba de carga concurrente.
+
+## Contexto académico y procedencia
+
+Este repositorio conserva el alcance académico y los créditos disponibles en el material original. La recuperación, las correcciones y las reconstrucciones de octubre de 2026 se realizaron con asistencia de Codex/IA y se distinguen del trabajo original. La contribución individual de cada integrante no está desglosada aquí.

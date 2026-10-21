@@ -1,23 +1,62 @@
 # EuroSky Connect
 
-Proyecto grupal de junio de 2026. Se conserva la arquitectura original: servidor HTTP C++ en Windows, datos CSV e interfaz HTML/CSS/JavaScript. Correcciones locales de octubre de 2026.
+Comparación de rutas aéreas con algoritmos de grafos, restricciones operativas y una interfaz web.
 
-## Cambios
+[Ficha y evidencia en el portafolio](https://juan-coronado.github.io/projects/eurosky-connect/)
 
-Se retiro la clave Maps incrustada. El servidor lee GOOGLE_MAPS_API_KEY del entorno de forma opcional; sin ella, el mapa no se carga pero los algoritmos funcionan. API_BASE usa el mismo origen. Las operaciones de gestion usan POST y una cabecera de la aplicacion; se rechazan entradas invalidas y solicitudes entre sitios. Se corrige el envio de respuestas parciales y el guardado CSV usa reemplazo atomico. Se validan parametros y se evita exceder 64 nodos en la mascara de programacion dinamica.
+| Periodo original | Dificultad académica | Estado de esta versión |
+| --- | --- | --- |
+| Junio de 2026 | Avanzada | Comprobado localmente |
 
-## Ejecutar
+## Funcionalidades
 
-En Developer PowerShell: `cl /nologo /std:c++17 /EHsc /utf-8 programa/EuroSkyConnect/backend.cpp ws2_32.lib /Fe:programa/EuroSkyConnect/EuroSkyConnectWeb.exe`. Ejecutar ese archivo desde programa/EuroSkyConnect; puerto por defecto 8080. EUROSKY_PORT permite cambiarlo. La demostracion actual corre en http://127.0.0.1:4324. Solo escucha en la interfaz local. Se mantiene el lanzador original para el puerto 8080.
+- BFS, DFS, Dijkstra, Bellman-Ford y programación dinámica.
+- Comparación de rutas y simulación Monte Carlo.
+- Servidor HTTP C++, datos CSV y gestión de aeronaves.
 
-## Alcance
+## Ejecución
 
-Datos academicos, sin horarios, tarifas o predicciones comerciales en vivo. Google Maps necesita configuracion propia. Bootstrap y el generador PDF del original cargan bibliotecas externas desde CDN. No se ejecuta la clave anterior ni se publica entre las fuentes. Este servidor HTTP es una demostracion de un solo proceso, sin autenticacion; no debe exponerse a Internet directamente.
+Windows con las herramientas C++ de Visual Studio. Abrir Developer PowerShell en la raíz del repositorio. El servidor escucha solo en localhost; el mapa es opcional y requiere una clave propia en GOOGLE_MAPS_API_KEY.
 
-## Verificacion
+```powershell
+cl /nologo /std:c++17 /EHsc /utf-8 programa/EuroSkyConnect/backend.cpp ws2_32.lib /Fe:programa/EuroSkyConnect/EuroSkyConnectWeb.exe
+Set-Location programa/EuroSkyConnect
+.\EuroSkyConnectWeb.exe
+```
 
-Se compilo y ejecuto. tests/algoritmos.cpp comprueba BFS, DFS, Dijkstra, Bellman-Ford, DP y parametros no finitos o malformados; compilar con ws2_32.lib. API comprobada para aeropuertos, calculo MAD, comparacion, Monte Carlo y peticiones invalidas. Evidencias en evidencia/. El mapa no se comprobo con una clave activa.
+Abrir http://127.0.0.1:8080. EUROSKY_PORT permite elegir otro puerto. Bootstrap y el exportador PDF originales usan bibliotecas CDN. No exponer este servidor educativo directamente a Internet.
+
+## Comprobación disponible
+
+Compilado y ejecutado en Windows. Pruebas de algoritmos y de API; resultados reales visibles en el navegador.
+
+Ejecutar desde la raíz del repositorio.
+
+```powershell
+cl /nologo /std:c++17 /EHsc /utf-8 tests/algoritmos.cpp ws2_32.lib /Fe:pruebas.exe
+.\pruebas.exe
+```
+
+[Registro de ejecución](evidencia/ejecucion.txt)
+
+![Captura real de EuroSky calculando rutas con el mapa opcional sin configurar.](evidencia/aplicacion.jpg)
+
+Las comprobaciones anteriores corresponden a la recuperación de octubre de 2026; esta publicación conserva sus registros.
 
 ## Aprendizaje
 
-Grafos, recorridos, caminos minimos, optimizacion con restricciones e integracion web/C++. Dificultad avanzada.
+- Comparar estrategias de exploración y optimización.
+- Integrar un motor algorítmico C++ con una interfaz web.
+
+## Revisión para el portafolio
+
+- Retirada la clave Maps incrustada y separada la configuración del código.
+- Validación de entradas, POST para cambios y guardado CSV atómico.
+
+## Alcance
+
+Datos académicos sin tarifas comerciales en vivo. El mapa Google es opcional y no se comprobó con una clave activa. Servidor local educativo, sin autenticación de producción.
+
+## Contexto académico y procedencia
+
+Este repositorio conserva el alcance académico y los créditos disponibles en el material original. La recuperación, las correcciones y las reconstrucciones de octubre de 2026 se realizaron con asistencia de Codex/IA y se distinguen del trabajo original. La contribución individual de cada integrante no está desglosada aquí.

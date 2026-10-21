@@ -121,6 +121,8 @@ La escala de rojo se oscurece y el hover usa un token propio, sin reutilizar un 
 
 Los diez proyectos son independientes en outputs/proyectos. catalogo.json centraliza fechas, alcance, dificultad, aprendizaje y evidencia; preparar_portafolio.py genera src/projects.js, fichas y ZIP mediante una lista permitida de extensiones, excluyendo datos privados y guias. content.js consume los elementos y conserva la escala de dificultad. Se reutilizan ProjectShowcase, ProjectCatalog, ProjectDialog y projectLinks. No se ejecuta codigo de proyectos desde el sitio estatico; las demos locales son servicios separados.
 
+El campo `repository` enlaza cada proyecto con su repositorio GitHub público. El generador exporta `source` y una etiqueta que distingue fuentes de documentación. `projectLinks` acepta `includeSource`; las tarjetas lo desactivan para conservar detalle y descarga, mientras los diálogos y fichas completas presentan GitHub. Las descargas permiten `.sql` y excluyen explícitamente `.git`; las pruebas de archivos ZIP comprueban los scripts SQL y la ausencia de datos privados, guías, binarios y credenciales.
+
 ## Presentación y evidencia del 20 de octubre de 2026
 
 - `content.js` concentra metadatos, presentación, cita y relaciones `projectIds` entre tecnologías y proyectos. El perfil conserva la información proporcionada, sin atribuciones individuales ni niveles nuevos.
