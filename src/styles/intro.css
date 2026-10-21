@@ -1,0 +1,28 @@
+.intro {
+  position: fixed;
+  z-index: 8;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  overflow: clip;
+  perspective: 1100px;
+  pointer-events: none;
+}
+
+.intro__punctuation { position: absolute; width: 4rem; height: 8rem; transform-style: preserve-3d; }
+.intro__dot { position: absolute; left: calc(50% - .4rem); bottom: 1.1rem; width: .8rem; height: .8rem; border-radius: 50%; background: var(--color-bone); box-shadow: 0 0 26px rgb(207 182 117 / 18%); }
+.intro__bar { position: absolute; left: calc(50% - .38rem); top: .7rem; width: .76rem; height: 4.5rem; transform-origin: center bottom; background: var(--aged-ink-text); opacity: 0; }
+.intro__name { position: absolute; width: 92%; text-align: center; perspective: 1000px; font: var(--font-display-weight) clamp(2rem, 5.65vw, 6rem)/1.35 var(--font-display); letter-spacing: .01em; font-kerning: none; }
+.intro__name-line { display: block; white-space: nowrap; }
+.intro__name-line + .intro__name-line { margin-top: .1em; }
+.intro__letter { display: inline-block; white-space: pre; opacity: 0; transform-style: preserve-3d; color: var(--color-bone); background: var(--aged-ink-text); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: var(--display-outline) #291018; paint-order: stroke fill; filter: drop-shadow(0 2px 0 #16030a) drop-shadow(0 8px 12px #0008); }
+.intro__title { position: absolute; width: 100%; text-align: center; font: var(--font-display-weight) clamp(4rem, 14vw, 14rem)/1.16 var(--font-display); letter-spacing: -.01em; font-kerning: none; perspective: 1000px; }
+.intro__title-word { display: inline-block; }
+.skip-intro { position: fixed; z-index: 10; right: var(--page-gutter); bottom: 1.8rem; padding: .5rem .85rem; border: 1px solid var(--color-crimson-edge); color: var(--color-bone); background: var(--surface-header); }
+
+@media (max-width: 48rem) {
+  .intro__name { font-size: 6.5vw; line-height: 1.45; }
+  .intro__title { font-size: 18.5vw; }
+  .intro__punctuation { transform: scale(.8); }
+  .skip-intro { bottom: 1.4rem; }
+}

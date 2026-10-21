@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#190b0f"/>
+  <g fill="#eadfc8">
+    <path id="leaf" d="M32 31C28 26 19 21 23 15C26 11 31 13 32 16C34 12 39 12 42 15C46 21 36 27 32 31Z"/>
+    <use href="#leaf" transform="rotate(72 32 32)"/>
+    <use href="#leaf" transform="rotate(144 32 32)"/>
+    <use href="#leaf" transform="rotate(216 32 32)"/>
+    <use href="#leaf" transform="rotate(288 32 32)"/>
+  </g>
+  <path d="M32 32Q39 43 36 53" fill="none" stroke="#eadfc8" stroke-width="3" stroke-linecap="round"/>
+</svg>

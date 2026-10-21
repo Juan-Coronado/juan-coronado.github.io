@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#050805" />
+    <!-- metadata:start --><meta name="description" content="Soy Juan Antonio Coronado Palacios, estudiante de Ingeniería de Software. Explora mis proyectos con C++, Java, bases de datos y tecnologías web."><title>Juan Coronado | Proyectos de Ingeniería de Software</title><meta property="og:title" content="Juan Coronado | Proyectos de Ingeniería de Software"><meta property="og:description" content="Soy Juan Antonio Coronado Palacios, estudiante de Ingeniería de Software. Explora mis proyectos con C++, Java, bases de datos y tecnologías web."><meta property="og:type" content="website"><meta property="og:locale" content="es_PE"><meta name="twitter:card" content="summary_large_image"><link rel="canonical" href="https://juan-coronado.github.io/"><meta property="og:url" content="https://juan-coronado.github.io/"><meta property="og:image" content="https://juan-coronado.github.io/assets/social-preview.jpg"><meta name="twitter:image" content="https://juan-coronado.github.io/assets/social-preview.jpg"><meta property="og:image:alt" content="Portafolio de Juan Antonio Coronado Palacios"><!-- metadata:end -->
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./assets/fonts/unifraktur-cook-bold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="./styles.css?revision=grimoire-polish-2" />
+    <script type="module" src="./src/main.js?revision=grimoire-polish-2"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Ir al contenido</a>
+
+    <header class="site-header" data-chrome>
+      <a class="brand" href="#portada" aria-label="Ir al inicio">
+        <span class="brand__mark" data-content="initials" aria-hidden="true">JACP</span>
+        <span class="brand__name" data-content="shortName">Juan Coronado</span>
+      </a>
+      <button class="menu-toggle grimoire-button grimoire-button--compact" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span data-content="menu">Menú</span><span class="menu-toggle__mark" aria-hidden="true">+</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal"><!-- nav-fallback:start --><a class="nav-link" href="#portada">Inicio</a><a class="nav-link" href="#sobre-mi">Sobre mí</a><a class="nav-link" href="#proyectos">Proyectos</a><a class="nav-link" href="#tecnologias">Tecnologías</a><a class="nav-link" href="#contacto">Contacto</a><!-- nav-fallback:end --></nav>
+    </header>
+
+    <nav class="section-progress" id="section-progress" data-chrome></nav>
+
+    <main id="contenido" tabindex="-1">
+    <section class="hero" id="portada" tabindex="-1" data-nav-section aria-labelledby="hero-title">
+      <figure class="portrait" id="portrait" aria-label="Retrato del autor formado por partículas">
+        <canvas id="portrait-canvas" aria-hidden="true"></canvas>
+        <img class="portrait__fallback" id="portrait-fallback" src="./assets/juan.webp" alt="Retrato del autor" width="1000" height="1000" />
+      </figure>
+
+      <div class="hero__copy" id="hero-copy">
+        <h1 class="hero__title" id="hero-title">Portafolio</h1>
+        <p class="hero__name" data-content="fullName">Juan Antonio Coronado Palacios</p>
+        <p class="hero__role" data-copy="hero.role">Estudiante de Ingeniería de Software</p>
+        <p class="hero__description" data-copy="hero.description">Construyo proyectos con C++, Java y tecnologías web.</p>
+        <a class="grimoire-button grimoire-button--primary hero__action" href="#proyectos" data-copy="hero.action">Ver proyectos</a>
+      </div>
+
+      <noscript><p class="no-script">Activa JavaScript para ver la introducción animada.</p></noscript>
+    </section>
+
+    <div class="sections" data-chrome>
+      <section class="content-section about-section" id="sobre-mi" tabindex="-1" data-nav-section aria-labelledby="about-title">
+        <div class="section-inner about-section__inner">
+          <h2 class="section-title about-title" id="about-title" data-copy="about.title">Sobre mí</h2>
+          <div class="about-copy">
+            <p class="about-statement" data-copy="about.statement">Cada proyecto es una oportunidad para crear algo nuevo.</p>
+            <div class="section-description about-description" data-copy="about.description"><p>Soy Juan Antonio Coronado Palacios, estudiante de Ingeniería de Software. Me gusta explorar nuevas tecnologías, experimentar con ideas y convertirlas en proyectos reales.</p><p>Disfruto aprender mientras construyo, enfrentar nuevos desafíos y descubrir diferentes maneras de resolver problemas. Este portafolio reúne mis proyectos, experiencias y parte del camino que sigo recorriendo en el mundo de la tecnología.</p></div>
+            <blockquote class="about-quote">
+              <p><em data-copy="about.quote">«Mi magia es no rendirme»</em></p>
+              <cite data-copy="about.quoteSource">Asta · Black Clover</cite>
+            </blockquote>
+          </div>
+          <figure class="about-portrait">
+            <div class="about-portrait__frame">
+              <img class="about-portrait__image" id="about-photo" src="./assets/juan.webp" alt="Retrato de Juan Antonio Coronado Palacios" width="1000" height="1000" loading="lazy" decoding="async" />
+              <span class="about-portrait__ribbon" id="about-seal" aria-hidden="true"></span>
+            </div>
+            <figcaption data-content="fullName">Juan Antonio Coronado Palacios</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="content-section projects-section" id="proyectos" tabindex="-1" data-nav-section aria-labelledby="projects-title">
+        <div class="section-inner">
+          <h2 class="section-title" id="projects-title" data-copy="projects.title">Proyectos</h2>
+          <p class="section-description" data-copy="projects.description">De mis primeros programas a sistemas con algoritmos y datos. Un recorrido por lo que voy aprendiendo.</p>
+          <div class="project-grid" id="project-list"><!-- project-fallback:start --><div class="project-static-list"><article class="project-static-card"><h3>Agencia de viajes</h3><p>Mis primeros pasos con menús, decisiones y cotizaciones de servicios turísticos.</p><a href="./projects/agencia-viajes-cpp/">Abrir ficha completa</a></article><article class="project-static-card"><h3>Reservas turísticas</h3><p>Una interfaz de escritorio para registrar viajeros y organizar sus reservas turísticas.</p><a href="./projects/reservas-viajes-java/">Abrir ficha completa</a></article><article class="project-static-card"><h3>Gestión inmobiliaria</h3><p>Propiedades, inquilinos y contratos conectados mediante reglas de negocio y una estructura MVC.</p><a href="./projects/inmobiliaria-poo2/">Abrir ficha completa</a></article><article class="project-static-card"><h3>Metropolitano: datos</h3><p>El modelo relacional detrás de usuarios, tarjetas, recargas y pagos del Metropolitano.</p><a href="./projects/metropolitano-datos/">Abrir ficha completa</a></article><article class="project-static-card"><h3>JImport: migración de datos</h3><p>Estudio de una migración del esquema Sales, desde la planificación hasta la validación de integridad.</p><a href="./projects/jimport-oracle/">Abrir ficha completa</a></article><article class="project-static-card"><h3>Metropolitano: mi tarjeta</h3><p>Una aplicación para consultar el saldo, solicitar una tarjeta y simular recargas desde una cuenta personal.</p><a href="./projects/metropolitano-web/">Abrir ficha completa</a></article><article class="project-static-card"><h3>Inventario agrícola</h3><p>Registro de productos perecederos con una lista enlazada y conservación de datos entre sesiones.</p><a href="./projects/inventario-agricola/">Abrir ficha completa</a></article><article class="project-static-card"><h3>Logística con autómatas</h3><p>Seguimiento de lotes desde la recepción hasta su entrega, con una pila para resolver incidencias.</p><a href="./projects/distribucion-logistica/">Abrir ficha completa</a></article><article class="project-static-card"><h3>EuroSky Connect</h3><p>Comparación de rutas aéreas con algoritmos de grafos, restricciones operativas y una interfaz web.</p><a href="./projects/eurosky-connect/">Abrir ficha completa</a></article><article class="project-static-card"><h3>Multimedia hospitalaria</h3><p>Prototipo de organización y búsqueda de archivos multimedia mediante estructuras de datos propias.</p><a href="./projects/multimedia-hospitalaria/">Abrir ficha completa</a></article></div><!-- project-fallback:end --></div>
+        </div>
+      </section>
+
+      <section class="content-section technology-section" id="tecnologias" tabindex="-1" data-nav-section aria-labelledby="technology-title">
+        <div class="section-inner">
+          <h2 class="section-title" id="technology-title" data-copy="technologies.title">Tecnologías</h2>
+          <p class="section-headline" data-copy="technologies.headline">Las herramientas detrás de mis proyectos.</p>
+          <p class="section-description" data-copy="technologies.description">Estas tecnologías forman parte de mi aprendizaje. Los enlaces muestran dónde las he utilizado; las demás son herramientas que he explorado en mi formación.</p>
+          <div class="technology-explorer" id="technology-explorer"></div>
+        </div>
+      </section>
+
+      <section class="content-section contact-section" id="contacto" tabindex="-1" data-nav-section aria-labelledby="contact-title">
+        <div class="section-inner">
+          <h2 class="section-title" id="contact-title" data-copy="contact.title">Contacto</h2>
+          <p class="section-headline contact-headline" data-copy="contact.headline">Las buenas ideas también empiezan con una conversación.</p>
+          <p class="section-description" data-copy="contact.description">Siempre estoy abierto a conocer nuevas personas, intercambiar ideas y participar en proyectos que me permitan seguir aprendiendo. Si tienes alguna propuesta, oportunidad o simplemente quieres conectar, puedes encontrarme aquí.</p>
+          <ul class="contact-list" id="contact-list"><!-- contact-fallback:start --><li class="contact-item"><a class="contact-item__link" href="https://github.com/Juan-Coronado"><span class="contact-item__title">GitHub</span><span class="contact-item__description">Explora mis proyectos, contribuciones y lo que voy construyendo.</span></a></li><li class="contact-item"><a class="contact-item__link" href="https://www.linkedin.com/in/juan-antonio-coronado-palacios-6100b6329/"><span class="contact-item__title">LinkedIn</span><span class="contact-item__description">Conoce más sobre mi formación, habilidades y experiencias.</span></a></li><li class="contact-item"><a class="contact-item__link" href="mailto:juanantoniocoronadopalacios@gmail.com"><span class="contact-item__title">Correo</span><span class="contact-item__description">¿Tienes alguna idea, propuesta de colaboración u oportunidad profesional? Hablemos.</span></a></li><!-- contact-fallback:end --></ul>
+        </div>
+        <footer class="site-footer" role="contentinfo" data-chrome>
+          <div><span data-content="fullName">Juan Antonio Coronado Palacios</span><span class="site-footer__label" data-copy="footer.label">Portafolio personal</span></div>
+          <a href="#portada" data-content="backToTop">Volver al inicio</a>
+        </footer>
+      </section>
+    </div>
+    </main>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+      <button class="dialog-close grimoire-button grimoire-button--compact" id="project-dialog-close" type="button" data-content="close">Cerrar</button>
+      <div id="project-dialog-content"></div>
+    </dialog>
+
+    <dialog class="project-catalog" id="project-catalog"></dialog>
+
+    <div class="intro" id="intro" aria-hidden="true" hidden>
+      <div class="intro__punctuation" id="intro-punctuation">
+        <span class="intro__bar" id="intro-bar"></span>
+        <span class="intro__dot" id="intro-dot"></span>
+      </div>
+      <div class="intro__name" id="intro-name"></div>
+      <div class="intro__title" id="intro-title"></div>
+    </div>
+
+    <button class="skip-intro text-button" id="skip-intro" type="button" hidden></button>
+    <p class="sr-only" id="animation-status" role="status" aria-live="polite"></p>
+  </body>
+</html>

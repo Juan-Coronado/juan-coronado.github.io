@@ -1,0 +1,18 @@
+AGENCIA DE VIAJES
+Tarifas academicas originales de 2022 (PEN).
+
+1. Destinos  2. Hoteles  3. Restaurantes  4. Coches  0. Salir
+Opcion: Nombre completo: 1. Helios Costa Tropical - S/ 200 por dia
+2. Met Hotel - S/ 322 por dia
+3. Concorde De Luxe Resort - S/ 558 por dia
+4. Hotel de Londres Eiffel - S/ 1013 por dia
+5. Hotel Bellerive - S/ 1197 por dia
+Servicio: Dias (1-365): 
+COTIZACION
+Cliente: Juan Antonio Coronado Palacios
+Servicio: Met Hotel / 3 dias
+Total: S/ 966.00
+
+1. Destinos  2. Hoteles  3. Restaurantes  4. Coches  0. Salir
+Opcion: 
+Sesion finalizada.

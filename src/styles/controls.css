@@ -1,0 +1,91 @@
+.grimoire-button {
+  --control-edge: var(--color-crimson-edge);
+  --control-engraving: rgb(var(--crimson-highlight-rgb) / 20%);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 3rem;
+  border: 1px solid var(--control-edge);
+  border-radius: var(--radius-control);
+  padding: .7rem 1.3rem;
+  background-color: var(--color-grimoire);
+  background-image: linear-gradient(145deg, rgb(var(--crimson-highlight-rgb) / 10%), transparent 65%);
+  box-shadow: inset 0 1px 0 rgb(240 238 225 / 3%), inset 0 -2px 0 rgb(0 0 0 / 35%), 0 4px 12px rgb(0 0 0 / 28%);
+  color: var(--color-bone);
+  font: var(--font-display-weight) 1.15rem/1.2 var(--font-display);
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 60%);
+  cursor: pointer;
+  transition:
+    background-color var(--control-duration) ease,
+    border-color var(--control-duration) ease,
+    color var(--control-duration) ease,
+    box-shadow var(--control-duration) ease,
+    transform 150ms var(--ease-out);
+}
+
+.grimoire-button::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px solid var(--control-engraving);
+  border-radius: var(--radius-control-inner);
+  pointer-events: none;
+  transition: border-color var(--control-duration) ease;
+}
+
+.grimoire-button--primary {
+  --control-edge: var(--color-crimson-edge);
+  --control-engraving: rgb(var(--crimson-highlight-rgb) / 35%);
+  min-height: 3.75rem;
+  gap: 1.5rem;
+  padding: .9rem 1.65rem;
+  background-image:
+    radial-gradient(ellipse at 0 0, rgb(var(--crimson-rgb) / 24%), transparent 65%),
+    linear-gradient(120deg, rgb(55 8 17 / 94%), rgb(30 6 12 / 96%)),
+    url("../../assets/fondo-desktop.webp");
+  background-size: auto, auto, 18rem;
+  color: var(--color-bone);
+  font-size: 1.35rem;
+  box-shadow: inset 0 1px 0 rgb(240 238 225 / 5%), inset 0 -3px 0 rgb(0 0 0 / 45%), 0 5px 15px rgb(0 0 0 / 35%), var(--shadow-crimson-aura);
+}
+
+.grimoire-button--primary .clover-seal {
+  isolation: isolate;
+  color: var(--color-bone);
+  transition: color var(--control-duration) ease;
+}
+.grimoire-button--primary .clover-seal::before { content: ""; position: absolute; z-index: -1; inset: -.3rem; border: 1px solid rgb(var(--crimson-highlight-rgb) / 50%); border-radius: 50%; background: rgb(var(--crimson-shadow-rgb) / 80%); box-shadow: inset 0 0 0 3px rgb(0 0 0 / 35%); pointer-events: none; }
+
+.grimoire-button--secondary { min-height: 2.75rem; font: 600 1.15rem/1.25 var(--font-prose); text-shadow: none; box-shadow: none; }
+.grimoire-button--secondary::before { display: none; }
+.grimoire-button--compact { min-height: 2.75rem; padding: .65rem 1.1rem; font-size: 1.05rem; }
+.grimoire-button:focus-visible { outline: 2px solid var(--color-bone); outline-offset: 4px; }
+.grimoire-button:active { transform: translateY(1px); box-shadow: inset 0 2px 8px rgb(0 0 0 / 45%); }
+
+@media (hover: hover) and (pointer: fine) {
+  .grimoire-button:hover {
+    --control-engraving: rgb(var(--crimson-highlight-rgb) / 35%);
+    border-color: var(--color-crimson-hover);
+    background-color: var(--color-grimoire-hover);
+    color: var(--color-bone);
+    box-shadow: inset 0 1px 0 rgb(240 238 225 / 4%), inset 0 -2px 0 rgb(0 0 0 / 35%), 0 5px 15px rgb(0 0 0 / 32%);
+  }
+  .grimoire-button--primary:hover {
+    border-color: var(--color-crimson-hover);
+    color: var(--color-bone);
+    box-shadow: inset 0 1px 0 rgb(240 238 225 / 6%), inset 0 -3px 0 rgb(0 0 0 / 45%), 0 6px 18px rgb(0 0 0 / 38%), var(--shadow-crimson-aura-hover);
+  }
+  .grimoire-button--primary:hover .clover-seal { color: var(--color-gold-highlight); }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .grimoire-button:hover { transform: translateY(-1px); }
+  .grimoire-button:active { transform: translateY(1px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grimoire-button:active { transform: none; }
+}

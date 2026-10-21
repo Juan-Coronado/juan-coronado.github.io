@@ -1,0 +1,17 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Metropolitano: datos · Juan Coronado</title><meta name="description" content="El modelo relacional detrás de usuarios, tarjetas, recargas y pagos del Metropolitano."><link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg"><link rel="stylesheet" href="../case.css"></head><body><header><a href="../../#proyectos">Juan Coronado</a><a href="../../#proyectos">Volver a proyectos</a></header><main><div class="heading"><h1>Metropolitano: datos</h1><p class="metadata">2024-I · Comprobado en SQL Server</p><p class="intro">El modelo relacional detrás de usuarios, tarjetas, recargas y pagos del Metropolitano.</p></div><figure><pre class="terminal">Resultado
+
+---------
+
+SQL Server LocalDB: pruebas correctas
+
+Nombre_Usuario Tipo_Tarjeta Saldo EstadoTarjeta ReporteRobo
+
+-------------- ------------ ----- ------------- -----------
+
+Usuario Normal 39.50 0 1
+
+NumeroRecargas
+
+--------------
+
+3</pre><figcaption>Resultado real de las pruebas de integración ejecutadas en SQL Server LocalDB.</figcaption></figure><div class="actions"><a class="grimoire-button grimoire-button--primary" href="codigo.zip" download>Descargar código</a></div><div class="columns"><section><h2>El proyecto</h2><ul><li>16 tablas del modelo, cinco vistas y diez procedimientos.</li><li>Función de saldo y cuatro triggers.</li><li>Recargas, pagos y bloqueo con integridad de saldo.</li></ul><h2>Aprendizaje</h2><ul><li>Convertir un caso de negocio en entidades y relaciones.</li><li>Utilizar SQL, restricciones y operaciones atómicas.</li></ul></section><section><h2>Trabajo de recuperación</h2><ul><li>Recuperado el SQL del informe y corregidos campos, claves y joins.</li><li>Eliminada la doble aplicación de recargas y pagos; triggers para múltiples filas.</li></ul><h2>Comprobación</h2><p>Ejecutado en SQL Server LocalDB 2019 aislado. Saldo comprobado: 10 + 20 + 12 − 2,50 = 39,50; rechazo de sobreconsumo y tarjeta robada.</p><a href="ejecucion.txt">Ver registro completo de ejecución</a></section></div><section class="scope"><h2>Alcance de esta versión</h2><p>Datos de prueba. Se conservaron el modelo conceptual y el alcance del trabajo de 2024-I. No se hizo una prueba de carga concurrente.</p><p>El periodo corresponde al trabajo original. La revisión y las correcciones locales se realizaron en octubre de 2026.</p></section></main><footer>Portafolio de Juan Antonio Coronado Palacios</footer><script src="../case.js"></script></body></html>

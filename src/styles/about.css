@@ -1,0 +1,24 @@
+.about-section { border-top: 1px solid rgb(var(--crimson-rgb) / 45%); }
+.about-section__inner { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(15rem, .7fr); gap: 1.5rem clamp(2rem, 5vw, 5rem); }
+.about-title { grid-column: 1; grid-row: 1; margin-bottom: 0; }
+.about-copy { grid-column: 1; grid-row: 2; min-width: 0; }
+.about-statement { max-width: 47rem; margin: 0 0 1.25rem; color: var(--color-bone); font-family: var(--font-prose); font-size: clamp(1.9rem, 3.4vw, 3rem); line-height: 1.25; font-weight: 500; letter-spacing: -.015em; text-wrap: balance; }
+.about-description { max-width: 40rem; }
+.about-description p { margin: 0; }
+.about-description p + p { margin-top: .9em; }
+.about-quote { margin: 1.7rem 0 0; padding-left: 1rem; border-left: 2px solid var(--color-crimson-hover); color: var(--color-bone); }
+.about-quote p { margin: 0; font: italic 500 clamp(1.5rem, 2.1vw, 1.9rem)/1.4 var(--font-prose); }
+.about-quote cite { display: block; margin-top: .4rem; color: var(--color-muted); font: 400 .85rem/1.5 var(--font-body); }
+.about-portrait { position: relative; grid-column: 2; grid-row: 1/3; align-self: center; justify-self: end; width: 100%; max-width: 22rem; margin: 0; }
+.about-portrait__frame { position: relative; padding: .65rem; border: 1px solid var(--color-crimson-edge); border-radius: 1.2rem .4rem; background: var(--color-ink); box-shadow: 0 20px 55px rgb(12 0 4 / 42%), var(--shadow-crimson-aura); }
+.about-portrait__frame::before { content: ""; position: absolute; z-index: 1; inset: .3rem; border: 1px solid rgb(186 160 111 / 40%); border-radius: .95rem .2rem; pointer-events: none; }
+.about-portrait__image { display: block; width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; object-position: center 42%; border-radius: .6rem .1rem; filter: sepia(.18) saturate(.78) contrast(1.02); }
+.about-portrait__ribbon { position: absolute; z-index: 2; top: 0; left: 1.5rem; display: grid; place-items: center; width: 2.75rem; height: 4.6rem; padding-bottom: .7rem; background: linear-gradient(90deg, rgb(var(--crimson-shadow-rgb)), var(--color-crimson) 45%, rgb(var(--crimson-shadow-rgb))); color: var(--color-bone); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 84%, 0 100%); }
+.about-portrait figcaption { margin-top: 1rem; color: var(--color-bone); text-align: center; font: 700 1.4rem/1.4 var(--font-display); }
+
+@media (max-width: 63.999rem) {
+  .about-section__inner { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .about-portrait { grid-column: 1; grid-row: 3; justify-self: center; max-width: 13rem; }
+  .about-copy { grid-row: 2; }
+}
+@media (max-width: 48rem) { .about-statement { font-size: 2rem; } }

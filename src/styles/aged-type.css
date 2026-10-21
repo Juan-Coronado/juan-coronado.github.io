@@ -1,0 +1,23 @@
+.hero__title, .intro__title .intro__letter {
+  -webkit-mask-image: url("../../assets/ink-wear.svg?revision=grimoire-polish");
+  mask-image: url("../../assets/ink-wear.svg?revision=grimoire-polish");
+  -webkit-mask-size: 256px 128px;
+  mask-size: 256px 128px;
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+}
+
+@media (max-width: 48rem) {
+  .hero__title, .intro__title .intro__letter { -webkit-mask-size: 160px 100px; mask-size: 160px 100px; }
+}
+
+@media (forced-colors: active) {
+  html .hero__title, html .intro__title .intro__letter {
+    -webkit-mask-image: none;
+    mask-image: none;
+    -webkit-text-fill-color: CanvasText;
+    -webkit-text-stroke: 0;
+    background: none;
+    filter: none;
+  }
+}

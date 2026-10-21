@@ -1,0 +1,127 @@
+
+--- MENU PRINCIPAL ---
+1. Ingresar Lote
+2. Confirmar llegada de Lote
+3. Mostrar Estado de Lotes
+4. Avanzar Proceso de Lote
+5. Agregar Excepcion
+6. Resolver Excepcion
+7. Ver Pila de Excepciones
+8. Salir
+Seleccione una opcion: Nombre de la mercaderia: Numero de lote: Fecha de recepcion: Fecha de vencimiento: Lote registrado en Recepcion.
+
+--- MENU PRINCIPAL ---
+1. Ingresar Lote
+2. Confirmar llegada de Lote
+3. Mostrar Estado de Lotes
+4. Avanzar Proceso de Lote
+5. Agregar Excepcion
+6. Resolver Excepcion
+7. Ver Pila de Excepciones
+8. Salir
+Seleccione una opcion: Ingrese numero de lote para confirmar llegada: ¿Esta seguro que desea confirmar la llegada del lote? (s/n): Llegada confirmada. Lote paso a Inspeccion y Almacenamiento.
+
+--- MENU PRINCIPAL ---
+1. Ingresar Lote
+2. Confirmar llegada de Lote
+3. Mostrar Estado de Lotes
+4. Avanzar Proceso de Lote
+5. Agregar Excepcion
+6. Resolver Excepcion
+7. Ver Pila de Excepciones
+8. Salir
+Seleccione una opcion: Ingrese numero de lote para avanzar: ¿Inspeccion aprobada? (1=Si, 2=No, 3=Excepcion): Lote paso a Procesamiento.
+
+--- MENU PRINCIPAL ---
+1. Ingresar Lote
+2. Confirmar llegada de Lote
+3. Mostrar Estado de Lotes
+4. Avanzar Proceso de Lote
+5. Agregar Excepcion
+6. Resolver Excepcion
+7. Ver Pila de Excepciones
+8. Salir
+Seleccione una opcion: Ingrese numero de lote para la excepcion: Descripcion de la excepcion: ¿Esta seguro que desea registrar esta excepcion? (s/n): [EXCEPCIÓN] Excepcion agregada al lote L001
+
+--- MENU PRINCIPAL ---
+1. Ingresar Lote
+2. Confirmar llegada de Lote
+3. Mostrar Estado de Lotes
+4. Avanzar Proceso de Lote
+5. Agregar Excepcion
+6. Resolver Excepcion
+7. Ver Pila de Excepciones
+8. Salir
+Seleccione una opcion: Ingrese numero de lote para avanzar: El lote tiene una excepcion pendiente. Resuelvala antes de avanzar.
+
+--- MENU PRINCIPAL ---
+1. Ingresar Lote
+2. Confirmar llegada de Lote
+3. Mostrar Estado de Lotes
+4. Avanzar Proceso de Lote
+5. Agregar Excepcion
+6. Resolver Excepcion
+7. Ver Pila de Excepciones
+8. Salir
+Seleccione una opcion: Ingrese numero de lote para resolver excepcion: Excepcion resuelta y proceso retomado para el lote L001
+
+--- MENU PRINCIPAL ---
+1. Ingresar Lote
+2. Confirmar llegada de Lote
+3. Mostrar Estado de Lotes
+4. Avanzar Proceso de Lote
+5. Agregar Excepcion
+6. Resolver Excepcion
+7. Ver Pila de Excepciones
+8. Salir
+Seleccione una opcion: Ingrese numero de lote para avanzar: Lote paso a Empaquetado.
+
+--- MENU PRINCIPAL ---
+1. Ingresar Lote
+2. Confirmar llegada de Lote
+3. Mostrar Estado de Lotes
+4. Avanzar Proceso de Lote
+5. Agregar Excepcion
+6. Resolver Excepcion
+7. Ver Pila de Excepciones
+8. Salir
+Seleccione una opcion: Ingrese numero de lote para avanzar: Lote paso a Despacho.
+
+--- MENU PRINCIPAL ---
+1. Ingresar Lote
+2. Confirmar llegada de Lote
+3. Mostrar Estado de Lotes
+4. Avanzar Proceso de Lote
+5. Agregar Excepcion
+6. Resolver Excepcion
+7. Ver Pila de Excepciones
+8. Salir
+Seleccione una opcion: Ingrese numero de lote para avanzar: Lote entregado.
+
+--- MENU PRINCIPAL ---
+1. Ingresar Lote
+2. Confirmar llegada de Lote
+3. Mostrar Estado de Lotes
+4. Avanzar Proceso de Lote
+5. Agregar Excepcion
+6. Resolver Excepcion
+7. Ver Pila de Excepciones
+8. Salir
+Seleccione una opcion: 
+--- Lote: L001 ---
+Mercaderia: Producto de prueba
+Recepcion: 2026-10-19
+Vencimiento: 2026-10-25
+Estado actual: Entregado
+Estatus: Entregado | Excepciones activas: 0
+
+--- MENU PRINCIPAL ---
+1. Ingresar Lote
+2. Confirmar llegada de Lote
+3. Mostrar Estado de Lotes
+4. Avanzar Proceso de Lote
+5. Agregar Excepcion
+6. Resolver Excepcion
+7. Ver Pila de Excepciones
+8. Salir
+Seleccione una opcion: Saliendo del sistema...

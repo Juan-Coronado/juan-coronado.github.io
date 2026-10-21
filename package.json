@@ -1,0 +1,11 @@
+{
+  "name": "juan-coronado-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/prepare-page.mjs",
+    "start": "python -m http.server 4321 --bind 127.0.0.1",
+    "test": "node --test tests/*.test.js"
+  }
+}

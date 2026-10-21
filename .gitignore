@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+Thumbs.db
+.playwright-mcp/
+test-results/
+assets/fondo.png
+assets/proyecto-portafolio.webp
+assets/project-art/*.png
+docs/*
+!docs/ARCHITECTURE.md

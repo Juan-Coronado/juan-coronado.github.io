@@ -1,0 +1,27 @@
+/* Hide only the document's native bar. Scrolling and dialog scrollbars remain native. */
+html.has-section-progress { scrollbar-width: none; }
+html.has-section-progress::-webkit-scrollbar { width: 0; height: 0; }
+.section-progress { position: fixed; z-index: 18; right: clamp(.2rem, .7vw, .8rem); top: 50%; transform: translateY(-50%); display: grid; gap: .15rem; }
+.section-progress__link { position: relative; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; text-decoration: none; outline-offset: -2px; border-radius: .3rem; }
+.section-progress__mark { width: 1.8rem; height: 1.5rem; background: var(--color-crimson-edge); opacity: .65; clip-path: polygon(100% 0, 55% 49%, 84% 42%, 0 100%, 32% 48%, 12% 56%); transition: opacity 180ms ease, transform 180ms var(--ease-out), filter 180ms ease; }
+.section-progress__link[aria-current] .section-progress__mark { opacity: 1; background: rgb(var(--progress-highlight-rgb)); transform: scale(1.2); filter: drop-shadow(0 0 6px rgb(var(--progress-highlight-rgb) / 65%)); }
+.section-progress__label { position: absolute; right: calc(100% + .4rem); top: 50%; transform: translateY(-50%); padding: .5rem .7rem; border: 1px solid var(--color-crimson-edge); background: var(--color-grimoire); color: var(--color-bone); font-size: .7rem; line-height: 1.3; white-space: nowrap; opacity: 0; visibility: hidden; pointer-events: none; }
+.section-progress__link:focus-visible .section-progress__label { opacity: 1; visibility: visible; }
+.has-section-progress .content-section { padding-right: max(var(--page-gutter), 3.3rem); }
+.has-section-progress .site-header { padding-right: max(var(--page-gutter), 3.3rem); }
+.has-section-progress .hero__copy { right: max(var(--page-gutter), 3.3rem); }
+@media (hover: hover) and (pointer: fine) {
+  .section-progress__link:hover .section-progress__label { opacity: 1; visibility: visible; }
+  .section-progress__link:hover .section-progress__mark { opacity: 1; }
+}
+@media (max-width: 48rem) {
+  .section-progress { right: .1rem; }
+  .section-progress__link { width: 2.7rem; }
+  .section-progress__mark { width: 1.15rem; height: 1.1rem; }
+}
+@media (forced-colors: active) {
+  html.has-section-progress { scrollbar-width: auto; }
+  html.has-section-progress::-webkit-scrollbar { width: auto; height: auto; }
+  .section-progress__mark { background: CanvasText; forced-color-adjust: none; opacity: .5; }
+  .section-progress__link[aria-current] .section-progress__mark { background: Highlight; filter: none; opacity: 1; }
+}

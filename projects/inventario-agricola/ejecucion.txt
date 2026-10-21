@@ -1,0 +1,9 @@
+
+INVENTARIO AGRICOLA
+1. Registrar  2. Listar  3. Guardar  4. Salir
+Opcion: Zanahoria | Verdura | ingreso 2026-10-19 | vida 7 dias
+Manzana roja | Fruta | ingreso 2026-10-19 | vida 12 dias
+
+INVENTARIO AGRICOLA
+1. Registrar  2. Listar  3. Guardar  4. Salir
+Opcion: Sesion finalizada.

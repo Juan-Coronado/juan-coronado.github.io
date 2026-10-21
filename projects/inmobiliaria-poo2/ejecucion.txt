@@ -1,0 +1,22 @@
+SISTEMA DE GESTION INMOBILIARIA
+Version reconstruida desde las capturas del trabajo POO 2 (2024-I)
+
+1. Agregar propiedad  2. Agregar inquilino  3. Crear contrato
+4. Propiedades  5. Inquilinos  6. Contratos  7. Salir
+Opcion: ID: Direccion: Tipo: Registro guardado en esta sesion.
+
+1. Agregar propiedad  2. Agregar inquilino  3. Crear contrato
+4. Propiedades  5. Inquilinos  6. Contratos  7. Salir
+Opcion: ID: Nombre: Contacto: Propiedad ID: Registro guardado en esta sesion.
+
+1. Agregar propiedad  2. Agregar inquilino  3. Crear contrato
+4. Propiedades  5. Inquilinos  6. Contratos  7. Salir
+Opcion: ID: Propiedad ID: Inquilino ID: Inicio AAAA-MM-DD: Fin AAAA-MM-DD: Alquiler mensual PEN: Registro guardado en esta sesion.
+
+1. Agregar propiedad  2. Agregar inquilino  3. Crear contrato
+4. Propiedades  5. Inquilinos  6. Contratos  7. Salir
+Opcion: 1 | propiedad 1 | inquilino 1 | 2026-01-01 a 2026-12-31 | S/ 800.00
+
+1. Agregar propiedad  2. Agregar inquilino  3. Crear contrato
+4. Propiedades  5. Inquilinos  6. Contratos  7. Salir
+Opcion: 

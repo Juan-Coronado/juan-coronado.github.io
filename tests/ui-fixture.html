@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pruebas locales de componentes</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="../styles.css?revision=grimoire-polish">
+<body>
+<main class="content-section"><div class="section-inner">
+  <h1 class="section-title">Pruebas de componentes</h1>
+  <p class="section-description">Datos sintéticos para verificar el carrusel y el catálogo. No forman parte del portafolio.</p>
+  <div class="project-links" id="fixture-controls">
+    <button class="grimoire-button" data-count="0">0 proyectos</button>
+    <button class="grimoire-button" data-count="1">1 proyecto</button>
+    <button class="grimoire-button" data-count="5">5 proyectos</button>
+  </div>
+  <div class="project-grid" id="fixture-carousel"></div>
+</div></main>
+<dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title"><button class="dialog-close grimoire-button" id="fixture-close">Cerrar</button><div id="fixture-detail"></div></dialog>
+<dialog class="project-catalog" id="project-catalog"></dialog>
+<script type="module" src="./ui-fixture.js"></script>
+</body></html>

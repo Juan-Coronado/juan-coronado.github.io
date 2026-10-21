@@ -1,0 +1,13 @@
+.clover-seal { position: relative; display: inline-block; flex: 0 0 1.6rem; width: 1.6rem; height: 1.6rem; color: inherit; pointer-events: none; }
+.clover-seal__leaf {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 31%;
+  height: 43%;
+  background: currentColor;
+  clip-path: polygon(50% 100%, 0 48%, 0 20%, 20% 0, 38% 0, 50% 15%, 62% 0, 80% 0, 100% 20%, 100% 48%);
+  transform: translate(-50%, -100%) rotate(var(--leaf-angle));
+  transform-origin: 50% 100%;
+}
+.clover-seal__stem { position: absolute; left: 48%; top: 48%; width: 5%; height: 53%; border-radius: 99px; background: currentColor; transform: rotate(-8deg); transform-origin: top; }

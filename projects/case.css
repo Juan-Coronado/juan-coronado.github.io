@@ -1,0 +1,31 @@
+@import url('../src/styles/theme.css');
+@import url('../src/styles/controls.css');
+*{box-sizing:border-box}
+body{margin:0;background:#080a08;color:var(--color-bone);font:400 21px/1.55 "EB Garamond",Georgia,serif}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(rgb(5 8 5 / 66%),rgb(5 8 5 / 80%)),url('../assets/fondo-desktop.webp') center/cover}
+header,main,footer{width:min(1120px,calc(100% - 48px));margin:auto}
+header{display:flex;justify-content:space-between;gap:24px;padding:28px 0;border-bottom:1px solid #452125}
+a{color:var(--color-bone);text-underline-offset:5px}
+a:hover{color:#ddc59b}
+a:focus-visible{outline:2px solid var(--color-bone);outline-offset:5px}
+.heading{padding:46px 0 24px;max-width:880px}
+h1,h2{font-family:"UnifrakturCook",Georgia,serif;font-weight:700;line-height:1.15}
+h1{font-size:clamp(2.5rem,5.6vw,4.7rem);margin:0 0 20px;text-wrap:balance}
+h2{font-size:1.9rem;margin:32px 0 14px}
+p{margin:0 0 18px;max-width:72ch}
+.intro{font-size:1.5rem;max-width:60ch}
+.metadata,figcaption{color:var(--color-muted);font-size:1rem}
+figure{margin:0 0 24px}
+figure img{display:block;max-width:100%;max-height:650px;margin:auto;object-fit:contain;background:#090b09}
+figcaption{margin-top:12px}
+.terminal{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;background:#0b1112;border:1px solid #253333;border-radius:8px;padding:32px;font:18px/1.65 Consolas,monospace;color:#d6e4dc;min-height:200px;max-height:410px;overflow:auto}
+.actions{display:flex;gap:16px;flex-wrap:wrap;margin:26px 0}
+.actions [hidden]{display:none}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+li{margin-bottom:12px}ul{padding-left:24px;margin:0 0 24px}
+.scope{margin:36px 0 56px;padding-top:8px;border-top:1px solid #452125;color:var(--color-prose)}
+.document{padding:24px 32px;background:rgb(18 5 6 / 85%);border:1px solid #690c14}
+.document h2{margin-top:0}.evidence-note{font-weight:600}
+footer{font-size:1rem;color:var(--color-muted);padding:28px 0;border-top:1px solid #452125}
+::selection{background:#690c14;color:#fff6df}
+@media(max-width:700px){header,main,footer{width:calc(100% - 32px)}.heading{padding-top:32px}.columns{grid-template-columns:1fr;gap:0}.terminal{padding:20px;font-size:14px}.document{padding:20px}header{font-size:17px;align-items:center}.actions .grimoire-button{width:100%;justify-content:center}}
