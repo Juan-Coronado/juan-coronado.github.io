@@ -133,3 +133,7 @@ El campo `repository` enlaza cada proyecto con su repositorio GitHub público. E
 - `scripts/prepare-page.mjs` genera contenido estático escapado en bloques del HTML existente. Se ejecuta al regenerar proyectos o mediante `npm run build`; no es un proceso requerido para servir el resultado. El arranque de navegador mejora el HTML generado con los componentes interactivos.
 - La URL pública es opcional al preparar: sin ella no se inventan direcciones canonical o de imagen social. Con `PORTFOLIO_SITE_URL`, los metadatos incluyen la ruta completa del repositorio.
 - Las entradas por ancla se alinean después de cargar fuentes y montar componentes para conservar el destino aunque el contenido estático y el interactivo tengan alturas distintas.
+
+## Proyectos colaborativos — 23 de octubre de 2026
+
+El catálogo admite repositorios GitHub de equipos y sitios HTTPS externos. CargoMesh utiliza download=false: no se genera ZIP ni un enlace de descarga nulo. El generador conserva las diez descargas académicas y añade secciones, galería y fuentes del caso. El diálogo utiliza changesTitle para distinguir desarrollo colaborativo y recuperación. Las tarjetas mantienen dos acciones y no muestran un aviso de código pendiente cuando hay un repositorio externo.

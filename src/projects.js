@@ -16,6 +16,7 @@ const data = [
     "image": "../assets/project-art/agencia-viajes-cpp.webp?v=4fca8bd4f71b",
     "imageAlt": "Imagen referencial generada: equipaje y un avión en un aeropuerto contemporáneo.",
     "demo": null,
+    "demoLabel": null,
     "localDemo": null,
     "source": "https://github.com/Juan-Coronado/agencia-viajes-cpp",
     "sourceLabel": "Ver código en GitHub",
@@ -37,6 +38,7 @@ const data = [
         "Corregidas las lecturas de nombres y las entradas fuera de rango.",
         "Añadidas pruebas de cotización y salida al cerrar la entrada."
       ],
+      "changesTitle": "Trabajo de recuperación",
       "verification": "Compilado con MSVC C++17. Probados cálculo, límites, entradas inválidas y fin de entrada."
     },
     "evidence": {
@@ -61,6 +63,7 @@ const data = [
     "image": "../assets/project-art/reservas-viajes-java.webp?v=2945bdc78562",
     "imageAlt": "Imagen referencial generada: mostrador de recepción de un hotel y una tarjeta de habitación.",
     "demo": null,
+    "demoLabel": null,
     "localDemo": null,
     "source": "https://github.com/Juan-Coronado/reservas-viajes-java",
     "sourceLabel": "Ver código en GitHub",
@@ -82,6 +85,7 @@ const data = [
         "Corregido el intercambio de origen y hotel y la repetición de filas.",
         "Compatibilidad con Java 11 y errores visibles al guardar."
       ],
+      "changesTitle": "Trabajo de recuperación",
       "verification": "Compilado con Java 11. Probados modelo, validación, guardado y dos reservas distintas en la interfaz Swing real."
     },
     "evidence": {
@@ -106,6 +110,7 @@ const data = [
     "image": "../assets/project-art/inmobiliaria-poo2.webp?v=b337ab331f43",
     "imageAlt": "Imagen referencial generada: llaves de una vivienda en un departamento moderno.",
     "demo": null,
+    "demoLabel": null,
     "localDemo": null,
     "source": "https://github.com/Juan-Coronado/inmobiliaria-poo2",
     "sourceLabel": "Ver código en GitHub",
@@ -127,6 +132,7 @@ const data = [
         "Reconstruido desde las capturas de código del informe, sin fuentes Java independientes.",
         "Fechas con LocalDate y alquiler con BigDecimal."
       ],
+      "changesTitle": "Trabajo de recuperación",
       "verification": "Compilado y ejecutado con Java 11. Probados vínculos, periodos superpuestos, contratos consecutivos y el flujo de consola."
     },
     "evidence": {
@@ -151,6 +157,7 @@ const data = [
     "image": "../assets/project-art/metropolitano-datos.webp?v=488256fcb5b0",
     "imageAlt": "Imagen referencial generada: bus articulado en una estación de transporte urbano.",
     "demo": null,
+    "demoLabel": null,
     "localDemo": null,
     "source": "https://github.com/Juan-Coronado/metropolitano-datos",
     "sourceLabel": "Ver código en GitHub",
@@ -172,6 +179,7 @@ const data = [
         "Recuperado el SQL del informe y corregidos campos, claves y joins.",
         "Eliminada la doble aplicación de recargas y pagos; triggers para múltiples filas."
       ],
+      "changesTitle": "Trabajo de recuperación",
       "verification": "Ejecutado en SQL Server LocalDB 2019 aislado. Saldo comprobado: 10 + 20 + 12 − 2,50 = 39,50; rechazo de sobreconsumo y tarjeta robada."
     },
     "evidence": {
@@ -196,6 +204,7 @@ const data = [
     "image": "../assets/project-art/jimport-oracle.webp?v=b899df20da82",
     "imageAlt": "Imagen referencial generada: racks y cableado en una sala de servidores.",
     "demo": null,
+    "demoLabel": null,
     "localDemo": null,
     "source": "https://github.com/Juan-Coronado/jimport-oracle",
     "sourceLabel": "Ver documentación en GitHub",
@@ -216,6 +225,7 @@ const data = [
       "changes": [
         "Preparada la ficha técnica y la secuencia de validación a partir del documento recibido."
       ],
+      "changesTitle": "Trabajo de recuperación",
       "verification": "Revisión del documento y del material recibido. No se ejecutó una migración: no se proporcionó el origen Sales y no hay entorno Oracle disponible."
     },
     "evidence": {
@@ -240,6 +250,7 @@ const data = [
     "image": "../assets/project-art/metropolitano-web.webp?v=2d447aac451e",
     "imageAlt": "Imagen referencial generada: tarjeta de transporte junto a un validador de bus.",
     "demo": null,
+    "demoLabel": null,
     "localDemo": "http://127.0.0.1:4323/",
     "source": "https://github.com/Juan-Coronado/metropolitano-web",
     "sourceLabel": "Ver código en GitHub",
@@ -261,6 +272,7 @@ const data = [
         "Reconstruida la solución desde el PDF recibido.",
         "Persistencia JSON local, hashes de contraseña y protección antifalsificación."
       ],
+      "changesTitle": "Trabajo de recuperación",
       "verification": "Compilado con .NET 7. Probados registro, acceso, CSRF, saldo, recargas inválidas, bloqueo y persistencia. Interfaz comprobada en navegador."
     },
     "evidence": {
@@ -285,6 +297,7 @@ const data = [
     "image": "../assets/project-art/inventario-agricola.webp?v=8a6b038d67f4",
     "imageAlt": "Imagen referencial generada: productos agrícolas en cajas de un almacén.",
     "demo": null,
+    "demoLabel": null,
     "localDemo": null,
     "source": "https://github.com/Juan-Coronado/inventario-agricola",
     "sourceLabel": "Ver código en GitHub",
@@ -306,6 +319,7 @@ const data = [
         "Separadas las operaciones del inventario y la consola.",
         "Corregidas la liberación de memoria, las fechas y la lectura de archivos truncados."
       ],
+      "changesTitle": "Trabajo de recuperación",
       "verification": "Compilado con MSVC C++17. Probados guardado, reemplazo, recarga, nombres con espacios, fechas imposibles y archivo truncado."
     },
     "evidence": {
@@ -330,6 +344,7 @@ const data = [
     "image": "../assets/project-art/distribucion-logistica.webp?v=a9b4dd64e44c",
     "imageAlt": "Imagen referencial generada: paquetes y transportador en un almacén logístico.",
     "demo": null,
+    "demoLabel": null,
     "localDemo": null,
     "source": "https://github.com/Juan-Coronado/distribucion-logistica",
     "sourceLabel": "Ver código en GitHub",
@@ -351,6 +366,7 @@ const data = [
         "Validación de números únicos y fechas de cada lote.",
         "Corregido el estado cuando quedan incidencias pendientes y la salida ante entradas inválidas."
       ],
+      "changesTitle": "Trabajo de recuperación",
       "verification": "Compilado y ejecutado. Probados registro único, fechas, rechazo, pila LIFO, bloqueo y un recorrido completo hasta Entregado."
     },
     "evidence": {
@@ -375,6 +391,7 @@ const data = [
     "image": "../assets/project-art/eurosky-connect.webp?v=9a36a842e983",
     "imageAlt": "Imagen referencial generada: avión comercial en la pista de un aeropuerto.",
     "demo": null,
+    "demoLabel": null,
     "localDemo": "http://127.0.0.1:4324/",
     "source": "https://github.com/Juan-Coronado/eurosky-connect",
     "sourceLabel": "Ver código en GitHub",
@@ -396,6 +413,7 @@ const data = [
         "Retirada la clave Maps incrustada y separada la configuración del código.",
         "Validación de entradas, POST para cambios y guardado CSV atómico."
       ],
+      "changesTitle": "Trabajo de recuperación",
       "verification": "Compilado y ejecutado en Windows. Pruebas de algoritmos y de API; resultados reales visibles en el navegador."
     },
     "evidence": {
@@ -420,6 +438,7 @@ const data = [
     "image": "../assets/project-art/multimedia-hospitalaria.webp?v=ecee27e49454",
     "imageAlt": "Imagen referencial generada: estación de revisión de imágenes y archivos médicos.",
     "demo": null,
+    "demoLabel": null,
     "localDemo": null,
     "source": "https://github.com/Juan-Coronado/multimedia-hospitalaria",
     "sourceLabel": "Ver código en GitHub",
@@ -441,6 +460,7 @@ const data = [
         "Eliminada la reserva inicial excesiva de memoria.",
         "Corregidos índices al eliminar, lectura de archivos corruptos y guardado atómico."
       ],
+      "changesTitle": "Trabajo de recuperación",
       "verification": "Compilado con MSVC C++17. Pruebas con 300 pacientes ficticios, invariantes del árbol, PNG real, hash, trie y persistencia."
     },
     "evidence": {
@@ -448,6 +468,57 @@ const data = [
       "caption": "Salida real de una sesión de prueba del prototipo, con datos ficticios.",
       "text": "=== SISTEMA MEDICO MULTIMEDIA ===\n=== SISTEMA MEDICO MULTIMEDIA ===\nIngrese DNI (8 digitos) [0 para cancelar]: >> Paciente encontrado: Paciente de prueba - Tel: 000000000\n=== SISTEMA MEDICO MULTIMEDIA ===\n>> Datos guardados exitosamente. Cerrando sistema..."
     }
+  },
+  {
+    "id": "cargomesh",
+    "title": "CargoMesh 2",
+    "category": "Plataforma logística · En equipo",
+    "difficulty": "advanced",
+    "status": "En evolución",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Three.js"
+    ],
+    "description": "Desarrollamos en equipo una plataforma para coordinar cargas, transportistas y operaciones, con asistencia conversacional, mapas y visualización 3D.",
+    "period": "Septiembre – octubre de 2026",
+    "image": "../assets/project-art/cargomesh.webp?v=2c4ad2b631ba",
+    "imageAlt": "Captura real de CargoMesh: una sede logística 3D con cinco camiones en un escenario de muestra.",
+    "demo": "https://cargomesh.vercel.app/",
+    "demoLabel": "Visitar CargoMesh",
+    "localDemo": null,
+    "source": "https://github.com/Chujutak2024/cargomesh",
+    "sourceLabel": "Repositorio del equipo",
+    "caseStudy": "../projects/cargomesh/",
+    "download": null,
+    "downloadLabel": "Descargar código",
+    "details": {
+      "summary": "Proyecto desarrollado en grupo. Esta presentación describe el producto completo y reconoce el trabajo compartido; no atribuye todos sus componentes a una sola persona. Los modelos y animaciones 3D son referencias visuales, no GPS ni flota real. Código integrado, demostración local y despliegue publicado se verifican por separado.",
+      "features": [
+        "Portales Cliente y Carrier para solicitudes, ofertas, reservas y vistas de seguimiento.",
+        "Backend compartido, autenticación y acceso a datos por organización.",
+        "Asistente Nova, mapas de carretera e integración MCP autenticada.",
+        "23 diseños visuales de camiones y 15 arquitecturas de sedes, con escenarios logísticos 3D."
+      ],
+      "learning": [
+        "Construir un producto en equipo, integrando interfaz, servicios, datos e inteligencia artificial.",
+        "Coordinar contratos, permisos y validaciones entre módulos y portales.",
+        "Entregar incrementos mediante ramas, PR, pruebas y evidencia reproducible."
+      ],
+      "changes": [
+        "Evolución de CargoMesh desde su primera versión hacia una plataforma con múltiples transportistas.",
+        "Desarrollo e integración de portales, servicios comerciales, persistencia, mapas y asistencia conversacional.",
+        "Catálogos 3D compartidos, escenarios de cinco camiones y continuidad de estado entre vistas.",
+        "Revisión de flujos, responsive, estados de recuperación y documentación de cada entrega."
+      ],
+      "changesTitle": "Desarrollo en equipo",
+      "verification": "Se comprobaron el repositorio público, las entregas #92, #128, #154 y #164 y los catálogos de 23 diseños de camiones y 15 sedes en la copia documentada. Los PR #154 y #164 están integrados en main; los otros corresponden a bases históricas. Las capturas son de escenarios de muestra. Los resultados de pruebas de los informes pertenecen a sus respectivas entregas; no se ejecutó una nueva batería de CargoMesh para esta ficha."
+    },
+    "evidence": {
+      "type": "image",
+      "caption": "Captura real del escenario visual de cinco camiones, del 18 de octubre de 2026. Muestra una versión histórica del catálogo; no representa vehículos ni posiciones reales.",
+      "src": "../projects/cargomesh/captura.webp"
+    }
   }
 ];
-export const projectItems = data.map(project => ({...project, image: new URL(project.image, import.meta.url).href, evidence: {...project.evidence, ...(project.evidence.src ? {src: new URL(project.evidence.src, import.meta.url).href} : {})}, demo: project.demo ? new URL(project.demo, import.meta.url).href : null, caseStudy: new URL(project.caseStudy, import.meta.url).href, download: new URL(project.download, import.meta.url).href}));
+export const projectItems = data.map(project => ({...project, image: new URL(project.image, import.meta.url).href, evidence: {...project.evidence, ...(project.evidence.src ? {src: new URL(project.evidence.src, import.meta.url).href} : {})}, demo: project.demo ? new URL(project.demo, import.meta.url).href : null, caseStudy: new URL(project.caseStudy, import.meta.url).href, download: project.download ? new URL(project.download, import.meta.url).href : null}));

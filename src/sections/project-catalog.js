@@ -1,5 +1,5 @@
 import { node } from '../ui/dom.js';
-import { createProjectCard } from './project-card.js?revision=github-projects-1';
+import { createProjectCard } from './project-card.js?revision=cargomesh-2026-10-23';
 import { sortProjectsByDifficulty } from './project-order.js';
 import { syncDialogState, closeDialogsForNavigation } from '../ui/dialog-state.js';
 

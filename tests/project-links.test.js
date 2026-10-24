@@ -17,13 +17,27 @@ test('cada detalle enlaza a su repositorio y JImport se presenta como documentac
   for (const project of content.projects.items) {
     const url = new URL(project.source);
     assert.equal(url.origin, 'https://github.com');
-    assert.equal(url.pathname, `/Juan-Coronado/${project.id}`);
+    assert.equal(url.pathname, project.id === 'cargomesh' ? '/Chujutak2024/cargomesh' : `/Juan-Coronado/${project.id}`);
     const source = projectLinks(project, content.labels).children.find(link => link.attributes.href === project.source);
     assert.ok(source);
     assert.equal(source.target, '_blank');
     assert.equal(source.rel, 'noopener noreferrer');
     if (project.id === 'jimport-oracle') assert.match(source.textContent, /documentación/);
   }
+});
+
+test('CargoMesh enlaza al sitio y al equipo sin ofrecer un ZIP ni mostrar código pendiente', t => {
+  mountDocument(t);
+  const project = content.projects.items.find(item => item.id === 'cargomesh');
+  assert.ok(project);
+  assert.equal(project.download, null);
+  assert.equal(project.demo, 'https://cargomesh.vercel.app/');
+  assert.equal(project.sourceLabel, 'Repositorio del equipo');
+  assert.equal(project.details.changesTitle, 'Desarrollo en equipo');
+  const links = projectLinks(project, content.labels, {includeCaseStudy:false, includeLocalDemo:false, includeSource:false});
+  assert.equal(links.children.length, 1);
+  assert.equal(links.children[0].attributes.href, project.demo);
+  assert.equal(links.children[0].textContent, 'Visitar CargoMesh');
 });
 
 test('las tarjetas conservan la descarga sin añadir el enlace de código al carrusel', t => {

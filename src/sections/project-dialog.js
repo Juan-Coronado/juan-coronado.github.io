@@ -1,5 +1,5 @@
 import { node } from '../ui/dom.js';
-import { technologyTags, projectLinks } from './project-elements.js?revision=github-projects-1';
+import { technologyTags, projectLinks } from './project-elements.js?revision=cargomesh-2026-10-23';
 import { syncDialogState, closeDialogsForNavigation } from '../ui/dialog-state.js';
 
 export class ProjectDialog {
@@ -57,7 +57,7 @@ export class ProjectDialog {
     if (project.period) information.insertBefore(node('p', 'project-period', `Trabajo original: ${project.period}`), summary);
     body.append(title, media);
     body.append(information);
-    for (const [key, heading] of [['learning', 'Aprendizaje'], ['changes', 'Trabajo de recuperación']]) {
+    for (const [key, heading] of [['learning', 'Aprendizaje'], ['changes', project.details.changesTitle || 'Trabajo de recuperación']]) {
       const entries = project.details[key];
       if (!entries?.length) continue;
       const list = node('ul', 'project-features');

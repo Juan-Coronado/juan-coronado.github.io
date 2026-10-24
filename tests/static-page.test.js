@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises';
 import { preparePage } from '../scripts/prepare-page.mjs';
 import { content } from '../src/content.js';
 
-test('la página generada conserva comillas y cursiva, los diez proyectos y es idempotente', async () => {
+test('la página generada conserva comillas y cursiva, todos los proyectos y es idempotente', async () => {
   const template = await readFile(new URL('../index.html', import.meta.url), 'utf8');
   const page = preparePage(template, content);
   assert.equal(preparePage(page, content), page);

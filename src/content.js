@@ -1,4 +1,4 @@
-import { projectItems } from './projects.js?revision=github-projects-1';
+import { projectItems } from './projects.js?revision=cargomesh-2026-10-23';
 /** Identity and copy live here, independently of the animation. */
 export const content = Object.freeze({
   identity: {
@@ -89,10 +89,10 @@ export const content = Object.freeze({
           { name: 'HTML5', icon: 'html5', projectIds: ['eurosky-connect'] },
           { name: 'CSS3', icon: 'css3', projectIds: ['eurosky-connect'] },
           { name: 'JavaScript', icon: 'javascript', projectIds: ['eurosky-connect'] },
-          { name: 'TypeScript', icon: 'typescript' },
-          { name: 'React', icon: 'react' },
-          { name: 'Next.js', icon: 'nextjs', lightIcon: true },
-          { name: 'Tailwind CSS', icon: 'tailwindcss' },
+          { name: 'TypeScript', icon: 'typescript', projectIds: ['cargomesh'] },
+          { name: 'React', icon: 'react', projectIds: ['cargomesh'] },
+          { name: 'Next.js', icon: 'nextjs', lightIcon: true, projectIds: ['cargomesh'] },
+          { name: 'Tailwind CSS', icon: 'tailwindcss', projectIds: ['cargomesh'] },
         ],
       },
       {

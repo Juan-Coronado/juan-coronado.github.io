@@ -1,5 +1,5 @@
 import { node } from '../ui/dom.js';
-import { createProjectCard } from './project-card.js?revision=github-projects-1';
+import { createProjectCard } from './project-card.js?revision=cargomesh-2026-10-23';
 
 /** Manual horizontal carousel. Native scrolling also supports trackpads and touch. */
 export class ProjectShowcase {
