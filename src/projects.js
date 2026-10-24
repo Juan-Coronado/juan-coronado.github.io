@@ -91,7 +91,7 @@ const data = [
     "evidence": {
       "type": "image",
       "caption": "Render de la interfaz Swing ejecutada con dos reservas de prueba.",
-      "src": "../projects/reservas-viajes-java/captura.png"
+      "src": "../projects/reservas-viajes-java/captura.png?v=042116c3f92c"
     }
   },
   {
@@ -278,7 +278,7 @@ const data = [
     "evidence": {
       "type": "image",
       "caption": "Captura real del panel después de una recarga simulada de S/25.",
-      "src": "../projects/metropolitano-web/captura.jpg"
+      "src": "../projects/metropolitano-web/captura.jpg?v=c260c9833932"
     }
   },
   {
@@ -419,7 +419,7 @@ const data = [
     "evidence": {
       "type": "image",
       "caption": "Captura real de EuroSky calculando rutas con el mapa opcional sin configurar.",
-      "src": "../projects/eurosky-connect/captura.jpg"
+      "src": "../projects/eurosky-connect/captura.jpg?v=c979fc0ac63b"
     }
   },
   {
@@ -482,13 +482,13 @@ const data = [
     ],
     "description": "Desarrollamos en equipo una plataforma para coordinar cargas, transportistas y operaciones, con asistencia conversacional, mapas y visualización 3D.",
     "period": "Septiembre – octubre de 2026",
-    "image": "../assets/project-art/cargomesh.webp?v=2c4ad2b631ba",
-    "imageAlt": "Captura real de CargoMesh: una sede logística 3D con cinco camiones en un escenario de muestra.",
+    "image": "../assets/project-art/cargomesh.webp?v=ce1cf06aa975",
+    "imageAlt": "Imagen referencial generada con IA: camiones en un centro de distribución y una sala de coordinación logística.",
     "demo": "https://cargomesh.vercel.app/",
     "demoLabel": "Visitar CargoMesh",
     "localDemo": null,
-    "source": "https://github.com/Chujutak2024/cargomesh",
-    "sourceLabel": "Repositorio del equipo",
+    "source": null,
+    "sourceLabel": "Ver código en GitHub",
     "caseStudy": "../projects/cargomesh/",
     "download": null,
     "downloadLabel": "Descargar código",
@@ -516,8 +516,8 @@ const data = [
     },
     "evidence": {
       "type": "image",
-      "caption": "Captura real del escenario visual de cinco camiones, del 18 de octubre de 2026. Muestra una versión histórica del catálogo; no representa vehículos ni posiciones reales.",
-      "src": "../projects/cargomesh/captura.webp"
+      "caption": "Imagen referencial generada con IA: centro logístico, transporte de carga y coordinación digital. Representa el concepto de CargoMesh; no es una fotografía del proyecto ni una captura de su interfaz.",
+      "src": "../projects/cargomesh/captura.webp?v=ce1cf06aa975"
     }
   }
 ];

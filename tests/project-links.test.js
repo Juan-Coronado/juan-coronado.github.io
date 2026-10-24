@@ -12,12 +12,16 @@ function mountDocument(t) {
   t.after(() => Object.assign(globalThis, previous));
 }
 
-test('cada detalle enlaza a su repositorio y JImport se presenta como documentación', t => {
+test('cada detalle con fuentes publicadas enlaza a su repositorio y JImport se presenta como documentación', t => {
   mountDocument(t);
   for (const project of content.projects.items) {
+    if (project.id === 'cargomesh') {
+      assert.equal(project.source, null);
+      continue;
+    }
     const url = new URL(project.source);
     assert.equal(url.origin, 'https://github.com');
-    assert.equal(url.pathname, project.id === 'cargomesh' ? '/Chujutak2024/cargomesh' : `/Juan-Coronado/${project.id}`);
+    assert.equal(url.pathname, `/Juan-Coronado/${project.id}`);
     const source = projectLinks(project, content.labels).children.find(link => link.attributes.href === project.source);
     assert.ok(source);
     assert.equal(source.target, '_blank');
@@ -26,15 +30,15 @@ test('cada detalle enlaza a su repositorio y JImport se presenta como documentac
   }
 });
 
-test('CargoMesh enlaza al sitio y al equipo sin ofrecer un ZIP ni mostrar código pendiente', t => {
+test('CargoMesh enlaza al sitio sin repositorio, ZIP ni aviso de código pendiente', t => {
   mountDocument(t);
   const project = content.projects.items.find(item => item.id === 'cargomesh');
   assert.ok(project);
   assert.equal(project.download, null);
   assert.equal(project.demo, 'https://cargomesh.vercel.app/');
-  assert.equal(project.sourceLabel, 'Repositorio del equipo');
+  assert.equal(project.source, null);
   assert.equal(project.details.changesTitle, 'Desarrollo en equipo');
-  const links = projectLinks(project, content.labels, {includeCaseStudy:false, includeLocalDemo:false, includeSource:false});
+  const links = projectLinks(project, content.labels, {includeCaseStudy:false, includeLocalDemo:false});
   assert.equal(links.children.length, 1);
   assert.equal(links.children[0].attributes.href, project.demo);
   assert.equal(links.children[0].textContent, 'Visitar CargoMesh');

@@ -16,6 +16,6 @@ export function projectLinks(project, labels, { includeCaseStudy = true, include
     links.append(download);
   }
   if (includeSource && project.source) links.append(externalLink(project.sourceLabel || labels.sourceCode, project.source, 'grimoire-button grimoire-button--secondary quiet-link'));
-  else if (!project.source && !project.download) links.append(node('span', 'pending-note', labels.sourcePending));
+  else if (!project.source && !project.download && !project.demo) links.append(node('span', 'pending-note', labels.sourcePending));
   return links;
 }

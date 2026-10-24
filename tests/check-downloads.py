@@ -7,13 +7,14 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class ProjectDownloads(unittest.TestCase):
-    def test_collaborative_project_uses_original_repository_without_incomplete_archive(self):
+    def test_collaborative_project_uses_ai_cover_without_repository_or_incomplete_archive(self):
         page = (ROOT / 'projects/cargomesh/index.html').read_text(encoding='utf-8')
-        self.assertIn('https://github.com/Chujutak2024/cargomesh', page)
+        self.assertNotIn('github.com/Chujutak2024/cargomesh', page)
+        self.assertNotIn('github.com/Chujutak2024/cargomesh', (ROOT / 'projects/cargomesh/README.md').read_text(encoding='utf-8'))
+        self.assertIn('generada con IA', page)
         self.assertIn('Desarrollamos en equipo', page)
         self.assertIn('https://cargomesh.vercel.app/', page)
         self.assertIn('Una arquitectura que conecta las piezas', page)
-        self.assertIn('Fuentes y entregas', page)
         self.assertNotIn('href="codigo.zip"', page)
         self.assertNotIn('Trabajo de recuperación', page)
         self.assertFalse((ROOT / 'projects/cargomesh/codigo.zip').exists())

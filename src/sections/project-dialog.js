@@ -1,5 +1,5 @@
 import { node } from '../ui/dom.js';
-import { technologyTags, projectLinks } from './project-elements.js?revision=cargomesh-2026-10-23';
+import { technologyTags, projectLinks } from './project-elements.js?revision=cargomesh-cover-2026-10-23';
 import { syncDialogState, closeDialogsForNavigation } from '../ui/dialog-state.js';
 
 export class ProjectDialog {

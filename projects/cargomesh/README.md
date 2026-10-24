@@ -4,7 +4,7 @@
 
 Desarrollamos en grupo CargoMesh para conectar a clientes que necesitan transportar carga con empresas transportistas. La plataforma reúne solicitudes, ofertas, reservas y vistas de seguimiento, con asistencia conversacional, mapas y visualización logística 3D.
 
-[Sitio del proyecto](https://cargomesh.vercel.app/) · [Repositorio original del equipo](https://github.com/Chujutak2024/cargomesh) · [Caso de portafolio](https://juan-coronado.github.io/projects/cargomesh/)
+[Sitio del proyecto](https://cargomesh.vercel.app/) · [Caso de portafolio](https://juan-coronado.github.io/projects/cargomesh/)
 
 ## Qué construimos
 
@@ -28,14 +28,16 @@ CargoMesh participa en **Build, Ship, Shape: Amazon Developer Hackathon 2026**. 
 
 ## Evidencia
 
-- [Mapa y workspace, PR #92](https://github.com/Chujutak2024/cargomesh/pull/92): integrado en una base histórica.
-- [Escenario y catálogo 3D, PR #128](https://github.com/Chujutak2024/cargomesh/pull/128): integrado en una base histórica.
-- [Portal Cliente, PR #154](https://github.com/Chujutak2024/cargomesh/pull/154): integrado en main.
-- [Nueva carga, PR #164](https://github.com/Chujutak2024/cargomesh/pull/164): integrado en main.
-- [Arquitectura](https://github.com/Chujutak2024/cargomesh/blob/main/docs/ARCHITECTURE.md) y [estado documentado](https://github.com/Chujutak2024/cargomesh/blob/main/docs/STATUS.md).
+- Mapa y workspace, PR #92: integrado en una base histórica.
+- Escenario y catálogo 3D, PR #128: integrado en una base histórica.
+- Portal Cliente, PR #154: integrado en main.
+- Nueva carga, PR #164: integrado en main.
+- Arquitectura y estado documentado.
 
 ## Alcance
 
 Proyecto en evolución. Las escenas y catálogos 3D son referencias visuales, no GPS ni activos reales. Las capturas del portafolio muestran escenarios de prueba identificados. Código integrado, preview local y despliegue publicado son evidencias distintas; no se certifica aquí un recorrido comercial completo en producción.
 
 La ficha se preparó el **23 de octubre de 2026** a partir del documento de contexto, fuentes y entregas comprobadas. Los resultados de pruebas citados pertenecen a sus entregas; no son una batería nueva. El código y las instrucciones de ejecución se consultan en el repositorio original, sin duplicar el proyecto ni sus credenciales.
+
+La portada del portafolio es una imagen referencial generada con IA; no es una captura de la aplicación. Las capturas reales de muestra se conservan en la galería. El enlace al repositorio se retiró del portafolio por indicación del propietario.

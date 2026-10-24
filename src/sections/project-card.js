@@ -1,6 +1,6 @@
 import { node } from '../ui/dom.js';
 import { createCloverSeal } from '../ui/emblems.js?revision=grimoire-polish';
-import { technologyTags, projectLinks } from './project-elements.js?revision=cargomesh-2026-10-23';
+import { technologyTags, projectLinks } from './project-elements.js?revision=cargomesh-cover-2026-10-23';
 import { projectDifficulty } from './project-order.js';
 
 export function createProjectCard(project, data, labels, { onOpen, prefix, signal }) {
