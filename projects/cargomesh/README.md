@@ -16,9 +16,9 @@ Desarrollamos en grupo CargoMesh para conectar a clientes que necesitan transpor
 
 ## Arquitectura y tecnologías del proyecto
 
-La aplicación web utiliza **TypeScript, Next.js y React**, con CSS Modules y Tailwind CSS. **Hono y Zod** conectan los puntos de entrada REST con contratos compartidos. **Supabase Auth, PostgreSQL y RLS** aportan identidad, persistencia y autorización por organización.
+El proyecto utiliza **TypeScript, JavaScript, Python y SQL**, además de **HTML5 y CSS3**. La aplicación web combina **Next.js y React**, con CSS Modules y Tailwind CSS. **Node.js, Hono y Zod** conectan los puntos de entrada REST con contratos compartidos. **Supabase Auth, PostgreSQL y RLS** aportan identidad, persistencia y autorización por organización.
 
-Los mapas utilizan **Google Maps JavaScript, Routes y Geocoding**. La visualización se construye con **Three.js y React Three Fiber**. El gateway de voz emplea **Python, WebSocket, Strands y Amazon Bedrock Nova**. Un servidor **MCP autenticado** reutiliza los servicios de aplicación. El proyecto incluye despliegue web en Vercel e infraestructura de voz en AWS.
+Los mapas utilizan **Google Maps Platform (JavaScript, Routes y Geocoding)** y **Leaflet**. La visualización se construye con **Three.js y React Three Fiber**. El gateway de voz emplea **Python, WebSocket, Strands y Amazon Bedrock Nova**. Un servidor **MCP autenticado** reutiliza los servicios de aplicación. El proyecto incluye despliegue web en **Vercel**, infraestructura de voz en **AWS**, contenedores **Docker** e integración continua con **GitHub Actions**.
 
 ## Desarrollo colaborativo
 

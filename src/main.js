@@ -1,4 +1,4 @@
-import { content } from './content.js?revision=cargomesh-cover-2026-10-23';
+import { content } from './content.js?revision=cargomesh-stack-2026-10-23';
 import { motion } from './config/motion.js?revision=grimoire-polish';
 import { IntroSequence } from './animation/intro.js?revision=grimoire-polish';
 import { ParticlePortrait } from './animation/portrait.js?revision=grimoire-polish';
