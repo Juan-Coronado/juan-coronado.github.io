@@ -470,9 +470,71 @@ const data = [
     }
   },
   {
+    "id": "cargomesh-1",
+    "title": "CargoMesh 1",
+    "category": "Hackatón · OpenAI · En equipo",
+    "difficulty": "advanced",
+    "status": "Participación internacional",
+    "technologies": [
+      "TypeScript",
+      "JavaScript",
+      "SQL",
+      "HTML5",
+      "CSS3",
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Supabase",
+      "PostgreSQL",
+      "WebMCP",
+      "Leaflet"
+    ],
+    "description": "Creamos en equipo la primera versión de CargoMesh para The WebMCP Challenge de OpenAI: coordinación de transporte B2B entre personas, agentes y portales con WebMCP.",
+    "period": "Agosto–septiembre de 2026",
+    "image": "../assets/project-art/cargomesh-1.webp?v=ce1cf06aa975",
+    "imageAlt": "Imagen referencial generada con IA de un centro logístico y camiones; no es una captura de CargoMesh 1.",
+    "demo": "https://devpost.com/software/cargomesh",
+    "demoLabel": "Ver participación",
+    "localDemo": null,
+    "source": null,
+    "sourceLabel": "Ver código en GitHub",
+    "caseStudy": "../projects/cargomesh-1/",
+    "download": null,
+    "downloadLabel": "Descargar código",
+    "details": {
+      "summary": "Proyecto desarrollado en grupo para The WebMCP Challenge de OpenAI. Se presenta la primera etapa del producto, diferenciada de CargoMesh 2. Los proveedores y datos de demostración no equivalen a transportistas, cobertura ni operaciones comerciales reales. La imagen es referencial, no una captura histórica.",
+      "features": [
+        "Participación en The WebMCP Challenge, hackatón internacional organizada por OpenAI.",
+        "Preparación de solicitudes de carga y descubrimiento de transportistas compatibles.",
+        "Herramientas WebMCP para consultar cobertura, capacidad y cotizaciones, solicitar reservas y revisar su estado.",
+        "Comparación de ofertas, persistencia de resultados y decisiones comerciales con control humano."
+      ],
+      "learning": [
+        "Diseñar una aplicación para la colaboración entre personas y agentes.",
+        "Integrar herramientas WebMCP, contratos de datos y persistencia.",
+        "Separar recomendaciones, selección del cliente y confirmación del transportista.",
+        "Construir en grupo y preparar una entrega para una convocatoria internacional."
+      ],
+      "changes": [
+        "Primera etapa de CargoMesh centrada en orquestación logística B2B con WebMCP.",
+        "Interfaz web, portales de proveedores, comparación de ofertas y continuidad de reservas.",
+        "Contratos compartidos, autorización por organización y resultados persistidos.",
+        "Base de aprendizaje que evolucionó hacia CargoMesh 2 para la hackatón de Amazon."
+      ],
+      "changesTitle": "Desarrollo en equipo",
+      "verification": "La participación se identifica en la convocatoria oficial de OpenAI y en la ficha pública de CargoMesh en Devpost. Se revisaron el README histórico y las dependencias de frontend de esta etapa. Esta revisión documental no repite las pruebas funcionales de la primera versión ni acredita premios o una clasificación del jurado."
+    },
+    "evidence": {
+      "type": "image",
+      "caption": "Imagen referencial generada con IA: transporte de carga y coordinación logística. Ilustra el dominio de CargoMesh; no es una fotografía del equipo ni una captura de CargoMesh 1.",
+      "src": "../projects/cargomesh-1/captura.webp?v=ce1cf06aa975"
+    }
+  },
+  {
     "id": "cargomesh",
     "title": "CargoMesh 2",
-    "category": "Plataforma logística · En equipo",
+    "category": "Hackatón · Amazon · En equipo",
     "difficulty": "advanced",
     "status": "En evolución",
     "technologies": [
@@ -503,7 +565,7 @@ const data = [
       "Vercel",
       "GitHub Actions"
     ],
-    "description": "Desarrollamos en equipo una plataforma para coordinar cargas, transportistas y operaciones, con asistencia conversacional, mapas y visualización 3D.",
+    "description": "Desarrollamos en equipo CargoMesh 2 para la hackatón internacional de Amazon: coordinación logística con portales Cliente y Carrier, Nova, mapas y visualización 3D.",
     "period": "Septiembre – octubre de 2026",
     "image": "../assets/project-art/cargomesh.webp?v=ce1cf06aa975",
     "imageAlt": "Imagen referencial generada con IA: camiones en un centro de distribución y una sala de coordinación logística.",
@@ -516,12 +578,13 @@ const data = [
     "download": null,
     "downloadLabel": "Descargar código",
     "details": {
-      "summary": "Proyecto desarrollado en grupo. Esta presentación describe el producto completo y reconoce el trabajo compartido; no atribuye todos sus componentes a una sola persona. Los modelos y animaciones 3D son referencias visuales, no GPS ni flota real. Código integrado, demostración local y despliegue publicado se verifican por separado.",
+      "summary": "CargoMesh 2 es la evolución desarrollada en grupo para Build, Ship, Shape: Amazon Developer Hackathon 2026. Esta presentación describe el producto completo y reconoce el trabajo compartido. Las escenas 3D son referencias visuales, no GPS ni flota real. La experiencia web con Nova y MCP no acredita una integración Alexa+ en un dispositivo Echo.",
       "features": [
         "Portales Cliente y Carrier para solicitudes, ofertas, reservas y vistas de seguimiento.",
         "Backend compartido, autenticación y acceso a datos por organización.",
         "Asistente Nova, mapas de carretera e integración MCP autenticada.",
-        "23 diseños visuales de camiones y 15 arquitecturas de sedes, con escenarios logísticos 3D."
+        "23 diseños visuales de camiones y 15 arquitecturas de sedes, con escenarios logísticos 3D.",
+        "Proyecto de equipo para Build, Ship, Shape: Amazon Developer Hackathon 2026."
       ],
       "learning": [
         "Construir un producto en equipo, integrando interfaz, servicios, datos e inteligencia artificial.",

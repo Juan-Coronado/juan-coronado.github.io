@@ -15,8 +15,9 @@ function mountDocument(t) {
 test('cada detalle con fuentes publicadas enlaza a su repositorio y JImport se presenta como documentación', t => {
   mountDocument(t);
   for (const project of content.projects.items) {
-    if (project.id === 'cargomesh') {
+    if (['cargomesh-1', 'cargomesh'].includes(project.id)) {
       assert.equal(project.source, null);
+      assert.equal(project.download, null);
       continue;
     }
     const url = new URL(project.source);

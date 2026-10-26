@@ -8,6 +8,14 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class ProjectDownloads(unittest.TestCase):
     def test_collaborative_project_uses_ai_cover_without_repository_or_incomplete_archive(self):
+        for slug, company in [('cargomesh-1', 'OpenAI'), ('cargomesh', 'Amazon')]:
+            with self.subTest(project=slug):
+                case = (ROOT / 'projects' / slug / 'index.html').read_text(encoding='utf-8')
+                self.assertIn(company, case)
+                self.assertNotIn('github.com/Chujutak2024/cargomesh', case)
+                self.assertNotIn('2447', case)
+                self.assertNotIn('href="codigo.zip"', case)
+                self.assertFalse((ROOT / 'projects' / slug / 'codigo.zip').exists())
         page = (ROOT / 'projects/cargomesh/index.html').read_text(encoding='utf-8')
         self.assertNotIn('github.com/Chujutak2024/cargomesh', page)
         self.assertNotIn('github.com/Chujutak2024/cargomesh', (ROOT / 'projects/cargomesh/README.md').read_text(encoding='utf-8'))

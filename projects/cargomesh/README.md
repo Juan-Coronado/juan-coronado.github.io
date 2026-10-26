@@ -24,7 +24,11 @@ Los mapas utilizan **Google Maps Platform (JavaScript, Routes y Geocoding)** y *
 
 El repositorio original conserva las contribuciones del equipo, documentación y entregas mediante PR. Juan Antonio Coronado Palacios participa en este desarrollo conjunto; esta ficha presenta el producto general y no atribuye todos sus componentes a una sola persona.
 
-CargoMesh participa en **Build, Ship, Shape: Amazon Developer Hackathon 2026**. No se afirma un premio ni un resultado final.
+CargoMesh 2 corresponde a nuestra participación en **Build, Ship, Shape: Amazon Developer Hackathon 2026**, organizada por **Amazon**. Evoluciona desde CargoMesh 1, presentado a **The WebMCP Challenge de OpenAI** (25 de agosto–4 de septiembre de 2026).
+
+La convocatoria de Amazon admitió entregas del **31 de agosto al 23 de octubre de 2026**. La documentación del equipo identifica la línea **Alexa+** y trabajo relacionado con **AWS Builder** y **Open Source**. La experiencia web con Nova y MCP no acredita por sí sola una integración Alexa+ en un Echo.
+
+El [calendario oficial](https://amazonappdev2026.devpost.com/details/dates) prevé anunciar ganadores el **3 de diciembre de 2026**. Al preparar esta ficha, el 25 de octubre, no se acredita un premio ni una clasificación final. [Convocatoria de Amazon](https://amazonappdev2026.devpost.com/) · [CargoMesh 1](https://juan-coronado.github.io/projects/cargomesh-1/).
 
 ## Evidencia
 

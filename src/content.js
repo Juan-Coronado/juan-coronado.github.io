@@ -1,4 +1,4 @@
-import { projectItems } from './projects.js?revision=cargomesh-stack-2026-10-23';
+import { projectItems } from './projects.js?revision=cargomesh-hackathons-2026-10-25';
 /** Identity and copy live here, independently of the animation. */
 export const content = Object.freeze({
   identity: {
