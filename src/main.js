@@ -1,4 +1,4 @@
-import { content } from './content.js?revision=cargomesh-hackathons-2026-10-25';
+import { content } from './content.js?revision=nova-assistant-2026-10-29';
 import { motion } from './config/motion.js?revision=grimoire-polish';
 import { IntroSequence } from './animation/intro.js?revision=grimoire-polish';
 import { ParticlePortrait } from './animation/portrait.js?revision=grimoire-polish';

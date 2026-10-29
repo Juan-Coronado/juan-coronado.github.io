@@ -11,14 +11,14 @@ Desarrollamos en grupo CargoMesh para conectar a clientes que necesitan transpor
 - Portal Cliente para preparar cargas, consultar solicitudes, comparar propuestas y revisar reservas e historial.
 - Portal Carrier para oportunidades, cotizaciones, pedidos, flota, conductores, sedes y control operativo.
 - Servicios compartidos, autenticación y separación de datos por organización.
-- Asistente Nova, mapas e integración MCP autenticada.
+- Asistente de IA para la página web con Amazon Nova mediante la API de Amazon Bedrock, además de mapas e integración MCP autenticada.
 - Catálogo compartido de 23 diseños visuales de camiones y 15 arquitecturas de sedes; escenarios de cinco camiones con continuidad de estado.
 
 ## Arquitectura y tecnologías del proyecto
 
 El proyecto utiliza **TypeScript, JavaScript, Python y SQL**, además de **HTML5 y CSS3**. La aplicación web combina **Next.js y React**, con CSS Modules y Tailwind CSS. **Node.js, Hono y Zod** conectan los puntos de entrada REST con contratos compartidos. **Supabase Auth, PostgreSQL y RLS** aportan identidad, persistencia y autorización por organización.
 
-Los mapas utilizan **Google Maps Platform (JavaScript, Routes y Geocoding)** y **Leaflet**. La visualización se construye con **Three.js y React Three Fiber**. El gateway de voz emplea **Python, WebSocket, Strands y Amazon Bedrock Nova**. Un servidor **MCP autenticado** reutiliza los servicios de aplicación. El proyecto incluye despliegue web en **Vercel**, infraestructura de voz en **AWS**, contenedores **Docker** e integración continua con **GitHub Actions**.
+Los mapas utilizan **Google Maps Platform (JavaScript, Routes y Geocoding)** y **Leaflet**. La visualización se construye con **Three.js y React Three Fiber**. El asistente de IA de la página utiliza **Amazon Nova mediante la API de Amazon Bedrock** para la conversación y la voz. Su gateway emplea **Python, WebSocket y Strands**. Un servidor **MCP autenticado** reutiliza los servicios de aplicación. El proyecto incluye despliegue web en **Vercel**, infraestructura de voz en **AWS**, contenedores **Docker** e integración continua con **GitHub Actions**.
 
 ## Desarrollo colaborativo
 

@@ -557,7 +557,8 @@ const data = [
       "React Three Fiber",
       "Google Maps Platform",
       "Leaflet",
-      "Amazon Bedrock Nova",
+      "Amazon Nova",
+      "Amazon Bedrock",
       "Strands",
       "MCP",
       "Docker",
@@ -565,7 +566,7 @@ const data = [
       "Vercel",
       "GitHub Actions"
     ],
-    "description": "Desarrollamos en equipo CargoMesh 2 para la hackatón internacional de Amazon: coordinación logística con portales Cliente y Carrier, Nova, mapas y visualización 3D.",
+    "description": "Desarrollamos en equipo CargoMesh 2 para la hackatón de Amazon: coordinación logística con portales Cliente y Carrier, asistente de IA con Amazon Nova vía Amazon Bedrock, mapas y 3D.",
     "period": "Septiembre – octubre de 2026",
     "image": "../assets/project-art/cargomesh.webp?v=ce1cf06aa975",
     "imageAlt": "Imagen referencial generada con IA: camiones en un centro de distribución y una sala de coordinación logística.",
@@ -582,7 +583,7 @@ const data = [
       "features": [
         "Portales Cliente y Carrier para solicitudes, ofertas, reservas y vistas de seguimiento.",
         "Backend compartido, autenticación y acceso a datos por organización.",
-        "Asistente Nova, mapas de carretera e integración MCP autenticada.",
+        "Asistente de IA para la página web con Amazon Nova mediante la API de Amazon Bedrock, junto con mapas e integración MCP autenticada.",
         "23 diseños visuales de camiones y 15 arquitecturas de sedes, con escenarios logísticos 3D.",
         "Proyecto de equipo para Build, Ship, Shape: Amazon Developer Hackathon 2026."
       ],

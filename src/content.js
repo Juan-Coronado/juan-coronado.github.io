@@ -1,4 +1,4 @@
-import { projectItems } from './projects.js?revision=cargomesh-hackathons-2026-10-25';
+import { projectItems } from './projects.js?revision=nova-assistant-2026-10-29';
 /** Identity and copy live here, independently of the animation. */
 export const content = Object.freeze({
   identity: {
@@ -105,6 +105,15 @@ export const content = Object.freeze({
           { name: 'Flask', icon: 'flask', lightIcon: true },
           { name: 'Node.js', icon: 'nodejs' },
           { name: 'HTTP / JSON', icon: 'code', lightIcon: true, projectIds: ['eurosky-connect'] },
+        ],
+      },
+      {
+        id: 'ia-integracion', title: 'IA e integración',
+        items: [
+          { name: 'Amazon Nova', icon: 'waveform', lightIcon: true, note: 'Asistente de IA de CargoMesh 2, con conversación y voz.', projectIds: ['cargomesh'] },
+          { name: 'Amazon Bedrock', icon: 'code', lightIcon: true, note: 'API utilizada para integrar los modelos Nova en el asistente web.', projectIds: ['cargomesh'] },
+          { name: 'Strands', icon: 'graph', lightIcon: true, note: 'SDK utilizado en la integración del asistente.', projectIds: ['cargomesh'] },
+          { name: 'MCP', icon: 'plugs-connected', lightIcon: true, note: 'Integración autenticada con los servicios de CargoMesh 2.', projectIds: ['cargomesh'] },
         ],
       },
       {
